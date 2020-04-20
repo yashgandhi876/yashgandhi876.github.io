@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/yashgandhi.tech/static/css/main.d7f5c056.chunk.css",
+    "main.js": "/yashgandhi.tech/static/js/main.4070af66.chunk.js",
+    "main.js.map": "/yashgandhi.tech/static/js/main.4070af66.chunk.js.map",
+    "runtime-main.js": "/yashgandhi.tech/static/js/runtime-main.8ec2e737.js",
+    "runtime-main.js.map": "/yashgandhi.tech/static/js/runtime-main.8ec2e737.js.map",
+    "static/js/2.309a854a.chunk.js": "/yashgandhi.tech/static/js/2.309a854a.chunk.js",
+    "static/js/2.309a854a.chunk.js.map": "/yashgandhi.tech/static/js/2.309a854a.chunk.js.map",
+    "index.html": "/yashgandhi.tech/index.html",
+    "precache-manifest.7b7d8c09c576c8dac920b0f4a1a45a17.js": "/yashgandhi.tech/precache-manifest.7b7d8c09c576c8dac920b0f4a1a45a17.js",
+    "service-worker.js": "/yashgandhi.tech/service-worker.js",
+    "static/css/main.d7f5c056.chunk.css.map": "/yashgandhi.tech/static/css/main.d7f5c056.chunk.css.map",
+    "static/js/2.309a854a.chunk.js.LICENSE.txt": "/yashgandhi.tech/static/js/2.309a854a.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/yashgandhi.tech/static/media/logo.5d5d9eef.svg",
+    "static/media/netlify.png": "/yashgandhi.tech/static/media/netlify.ff6e9861.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8ec2e737.js",
+    "static/js/2.309a854a.chunk.js",
+    "static/css/main.d7f5c056.chunk.css",
+    "static/js/main.4070af66.chunk.js"
+  ]
+}
