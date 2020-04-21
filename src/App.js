@@ -319,7 +319,7 @@ function App() {
             alt="icon of reactjs"
             src={require("./img/logo.svg")}
             className="ml-3 App-logo mb-5"
-            title="Hostby by Netlify"
+            title="Created using React"
             width="60px"
           />
         </a>
