@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/yashgandhi.tech/static/css/main.ab111ed6.chunk.css",
-    "main.js": "/yashgandhi.tech/static/js/main.efdc02ba.chunk.js",
-    "main.js.map": "/yashgandhi.tech/static/js/main.efdc02ba.chunk.js.map",
-    "runtime-main.js": "/yashgandhi.tech/static/js/runtime-main.8ec2e737.js",
-    "runtime-main.js.map": "/yashgandhi.tech/static/js/runtime-main.8ec2e737.js.map",
-    "static/js/2.309a854a.chunk.js": "/yashgandhi.tech/static/js/2.309a854a.chunk.js",
-    "static/js/2.309a854a.chunk.js.map": "/yashgandhi.tech/static/js/2.309a854a.chunk.js.map",
-    "index.html": "/yashgandhi.tech/index.html",
-    "precache-manifest.94620fee65718049a23a1e9446df1ea7.js": "/yashgandhi.tech/precache-manifest.94620fee65718049a23a1e9446df1ea7.js",
-    "service-worker.js": "/yashgandhi.tech/service-worker.js",
-    "static/css/main.ab111ed6.chunk.css.map": "/yashgandhi.tech/static/css/main.ab111ed6.chunk.css.map",
-    "static/js/2.309a854a.chunk.js.LICENSE.txt": "/yashgandhi.tech/static/js/2.309a854a.chunk.js.LICENSE.txt",
-    "static/media/logo.svg": "/yashgandhi.tech/static/media/logo.ee7cd8ed.svg",
-    "static/media/netlify.png": "/yashgandhi.tech/static/media/netlify.ff6e9861.png"
+    "main.css": "/static/css/main.ab111ed6.chunk.css",
+    "main.js": "/static/js/main.afb8b784.chunk.js",
+    "main.js.map": "/static/js/main.afb8b784.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.862b1ddb.js",
+    "runtime-main.js.map": "/static/js/runtime-main.862b1ddb.js.map",
+    "static/js/2.309a854a.chunk.js": "/static/js/2.309a854a.chunk.js",
+    "static/js/2.309a854a.chunk.js.map": "/static/js/2.309a854a.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.b2852f76d87dd01fff0c8eee6ce32afc.js": "/precache-manifest.b2852f76d87dd01fff0c8eee6ce32afc.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.ab111ed6.chunk.css.map": "/static/css/main.ab111ed6.chunk.css.map",
+    "static/js/2.309a854a.chunk.js.LICENSE.txt": "/static/js/2.309a854a.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/static/media/logo.ee7cd8ed.svg",
+    "static/media/netlify.png": "/static/media/netlify.ff6e9861.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.8ec2e737.js",
+    "static/js/runtime-main.862b1ddb.js",
     "static/js/2.309a854a.chunk.js",
     "static/css/main.ab111ed6.chunk.css",
-    "static/js/main.efdc02ba.chunk.js"
+    "static/js/main.afb8b784.chunk.js"
   ]
 }
