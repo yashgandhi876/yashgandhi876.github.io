@@ -36,5 +36,17 @@
   },
   "devDependencies": {
     "gh-pages": "^2.2.0"
+  },
+  "description": "",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yashgandhi2020/yashgandhi.tech.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yashgandhi2020/yashgandhi.tech/issues"
   }
 }
