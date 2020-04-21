@@ -9,7 +9,7 @@ const ProjectItems = ({ href, link, par }) => {
             {link}
           </a>
         </h4>
-        <p className="ml-3">{par}</p>
+        <p className="ml-3" dangerouslySetInnerHTML={{ __html: par }} />
       </li>
     </div>
   );

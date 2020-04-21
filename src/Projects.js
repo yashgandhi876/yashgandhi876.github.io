@@ -23,9 +23,9 @@ const Projects = () => {
               link="Antakshari With Bot"
               par="Anatakshari game is basically we have to sing song which starts
               from last letter of privous song sing by opponent. I create this
-              game using python. <br />
-              <br />
-              Why BOT? <br />( This is my first intelligent game and you will
+              game using python. &lt;br /&gt;
+              &lt;br /&gt;
+              Why BOT? &lt;br /&gt;( This is my first intelligent game and you will
               definitely lose game ; )"
             />
             <br />
