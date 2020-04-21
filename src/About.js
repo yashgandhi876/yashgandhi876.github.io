@@ -35,6 +35,7 @@ const About = () => {
             ) and Python ( Popular language ) I like python too. Concurrently
             I'm making some web pages ( as i
             <span role="img" aria-label="love">
+              {" "}
               💖
             </span>{" "}
             web ) then I learn CSS, Bootstrap and JavaScript.
