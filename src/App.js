@@ -1,5 +1,8 @@
 import React from "react";
 import "./App.css";
+import Projects from "./Projects";
+import Symbols from "./Symbols";
+import Links from "./Links";
 
 function App() {
   return (
@@ -88,87 +91,7 @@ function App() {
           <hr className="ununs underline" />
         </div>
       </div>
-      <div className="container" id="projects">
-        <div className="container">
-          <h3 className="pt-4">Projects</h3>
-          <div className="container">
-            <br />
-            <ul style={{ listStyleType: "none" }}>
-              <li>
-                <h4>
-                  <a
-                    href="http://mescoepune.org/alumni/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    College Alumni Portal
-                  </a>
-                </h4>
-                <p className="ml-3">
-                  It's team project, our college gave us an opportunity to work
-                  on live project from scratch. We used latest technology like
-                  HTML5, CSS3, BootStrap4 and Vanilla JavaScript ( ES6+ ) to
-                  create website.
-                </p>
-              </li>
-              <br />
-              <li>
-                <h4>
-                  <a
-                    href="https://github.com/yashgandhi2020/Antakshri_Game_With_Bot"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Antakshari With Bot
-                  </a>
-                </h4>
-                <p className="ml-3">
-                  Anatakshari game is basically we have to sing song which
-                  starts from last letter of privous song sing by opponent. I
-                  create this game using python. <br />
-                  <br />
-                  Why BOT? <br />( This is my first intelligent game and you
-                  will definitely lose game ; )
-                </p>
-              </li>
-              <br />
-              <li>
-                <h4>
-                  <a
-                    href="https://github.com/yashgandhi2020/gitcheatsheet"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    GitHub Cheat Sheet
-                  </a>
-                </h4>
-                <p className="ml-3">
-                  I created github cheat sheet for newbies in CS. It content all
-                  basic command, that will help to start with git & github. I
-                  used Mark-Down to create cheat sheet.
-                </p>
-              </li>
-              <br />
-              <li>
-                <h4>
-                  <a
-                    href="https://github.com/yashgandhi2020/Snake-Ladder-Game"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Snake & Ladder Game
-                  </a>
-                </h4>
-                <p className="ml-3">
-                  I created Snake and Ladder Game in second year for engineering
-                  using C. it has no UI, you can play on terminal.
-                </p>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <hr className="ununs underline" />
-      </div>
+      <Projects />
       <br />
       <div className="container" id="About">
         <div className="container">
@@ -183,7 +106,8 @@ function App() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                MESCOE
+                {" "}
+                MESCOE{" "}
               </a>
               pune. At the very beginning I don't even know what is programming,
               who are the coders. <br />
@@ -220,136 +144,8 @@ function App() {
         <hr className="ununs underline" />
       </div>
       <br />
-      <div className="container" id="Contact">
-        <div className="container">
-          <h3>Contact</h3>
-          <br />
-          <div className="container-fluid row pl-1 pr-0">
-            <div className="container col-sm-12 col-lg-6 col-md-6 pr-0">
-              <ul>
-                <li>
-                  LinkedIn :
-                  <a
-                    href="https://www.linkedin.com/in/yash-gandhi-0a4010167/"
-                    target="_blank"
-                    title=" For Professional use Only "
-                    rel="noopener noreferrer"
-                  >
-                    Yash Gandhi
-                  </a>
-                </li>
-                <br />
-                <li>
-                  Instagram :
-                  <a
-                    href="https://www.instagram.com/yashgandhi876/"
-                    target="_blank"
-                    title="To showcase my travel photos 😁"
-                    rel="noopener noreferrer"
-                  >
-                    yashgandhi876
-                  </a>
-                </li>
-                <br />
-                <li>
-                  FaceBook :
-                  <a
-                    href="https://www.facebook.com/profile.php?id=100034058533973"
-                    target="_blank"
-                    title="Rarely active"
-                    rel="noopener noreferrer"
-                  >
-                    Yash Gandhi
-                  </a>
-                </li>
-              </ul>
-              <br />
-            </div>
-            <div className="container col-sm-12 col-lg-6 col-md-6">
-              <ul>
-                <li>
-                  Email :
-                  <a
-                    href="mailto:yashgandhi876@gmail.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    title="yashgandhi876@gmail.com For work."
-                  >
-                    yashgandhi876
-                  </a>
-                </li>
-                <br />
-                <li>
-                  GitHub :
-                  <a
-                    href="https://github.com/yashgandhi2020"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    title="you will get all my project's here. )"
-                  >
-                    yashgandhi2020
-                  </a>
-                </li>
-                <br />
-                <li>
-                  Twitter :
-                  <a
-                    href="https://twitter.com/yashgandhi876"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    title="best place to get in touch with awesome people, i share web info and sometimes dev joks too 😉."
-                  >
-                    yashgandhi876
-                  </a>
-                </li>
-                <br />
-              </ul>
-            </div>
-          </div>
-        </div>
-        <hr className="ununs underline" />
-      </div>
-      <div className="container made-with text-center">
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://www.netlify.com/"
-        >
-          <img
-            alt="icon of reactjs"
-            src={require("./img/logo.svg")}
-            className="ml-3 App-logo mb-5"
-            title="Created using React"
-            width="60px"
-          />
-        </a>
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://github.com/yashgandhi2020/yashgandhi2020.github.io"
-        >
-          <img
-            alt="icon of github"
-            src={require("./img/github.png")}
-            title="Open-source on GitHub"
-            className="mr-3 mb-5 ml-3"
-            width="40px"
-          />
-        </a>
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://www.netlify.com/"
-        >
-          <img
-            alt="icon of netlify"
-            src={require("./img/netlify.png")}
-            className=" mb-5"
-            title="Hostby by Netlify"
-            width="40px"
-          />
-        </a>
-      </div>
+      <Links />
+      <Symbols />
     </div>
   );
 }
