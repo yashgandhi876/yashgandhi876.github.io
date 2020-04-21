@@ -5,19 +5,11 @@ const ProjectItems = ({ href, link, par }) => {
     <div className="project-item">
       <li>
         <h4>
-          <a
-            href="http://mescoepune.org/alumni/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            College Alumni Portal
+          <a href={href} target="_blank" rel="noopener noreferrer">
+            {link}
           </a>
         </h4>
-        <p className="ml-3">
-          It's team project, our college gave us an opportunity to work on live
-          project from scratch. We used latest technology like HTML5, CSS3,
-          BootStrap4 and Vanilla JavaScript ( ES6+ ) to create website.
-        </p>
+        <p className="ml-3">{par}</p>
       </li>
     </div>
   );
