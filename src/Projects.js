@@ -97,7 +97,13 @@ const Projects = () => {
               <p className="container" id="now_pro_des"></p>
             </div>
             <div className="btn-pro">
-              <a id="project_link" className="view-pro" href="./">
+              <a
+                id="project_link"
+                className="view-pro"
+                href="./"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 {" "}
                 View Project➡{" "}
               </a>
