@@ -4,7 +4,7 @@ import ProjectItems from "./ProjectItems";
 const Projects = () => {
   return (
     <div className="container" id="projects">
-      <div className="container">
+      <div className="container" id="simple">
         <h3 className="pt-4">Projects</h3>
         <div className="container">
           <br />
@@ -46,9 +46,89 @@ const Projects = () => {
           </ul>
         </div>
       </div>
+      <div className="container" id="classic">
+        <h3 className="pt-4">Projects</h3>
+        <div className="row container mt-5">
+          {/* <!-- prev --> */}
+          <div
+            id="prev_card_virtual"
+            className="prev col-sm-3 col-md-3 col-lg-3 d-none"
+          ></div>
+          <div
+            id="prev_card"
+            className="project-box prev col-sm-3 col-md-3 col-lg-3"
+          >
+            <div className="small_project_img">
+              <img
+                id="prev_img"
+                className="small_inner-project-img"
+                src={require("./img/s_l.jpg")}
+                alt=""
+                width="100%"
+                height="100%"
+              />
+            </div>
+            <div className="project-name">
+              <h5 id="prev_pro_name">Project Name</h5>
+            </div>
+            <div className="describe">
+              <p className="container" id="prev_pro_des"></p>
+            </div>
+          </div>
+          {/* <!-- now --> */}
+          <div
+            id="now_card"
+            className="project-box now col-sm-6 col-md-6 col-lg-6"
+          >
+            <div className="project-img">
+              <img
+                id="now_img"
+                className="inner-project-img"
+                src=""
+                alt=""
+                width="100%"
+                height="100%"
+              />
+            </div>
+            <div className="project-name">
+              <h5 id="now_pro_name">Project Name</h5>
+            </div>
+            <div className="describe">
+              <p className="container" id="now_pro_des"></p>
+            </div>
+            <div className="btn-pro">
+              <a id="project_link" className="view-pro" href="./">
+                {" "}
+                View Project➡{" "}
+              </a>
+            </div>
+          </div>
+          {/* <!-- next --> */}
+          <div
+            id="next_card"
+            className="project-box next col-sm-3 col-md-3 col-lg-3"
+          >
+            <div className="small_project_img">
+              <img
+                id="next_img"
+                className="small_inner-project-img"
+                src=""
+                alt=""
+              />
+            </div>
+            <div className="project-name">
+              <h5 id="next_pro_name">Project Name</h5>
+            </div>
+            <div className="describe">
+              <p className="container truncate" id="next_pro_des"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <br />
       <hr className="ununs underline" />
     </div>
   );
 };
-
 export default Projects;
