@@ -166,3 +166,16 @@ body::-webkit-scrollbar-thumb {
 .view-pro {
   font-size: 20px;
 }
+
+.on_hover {
+  margin: 0 0 !important;
+  padding: 0 0 !important;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(45, 45, 47, 0.8);
+  color: #d3d3d3;
+}

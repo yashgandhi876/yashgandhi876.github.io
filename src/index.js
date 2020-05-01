@@ -77,6 +77,9 @@ const next_pro_des = document.querySelector("#next_pro_des");
 
 const simple = document.querySelector("#simple");
 const classic = document.querySelector("#classic");
+const on_ho1 = document.querySelector("#on_ho1");
+const on_ho2 = document.querySelector("#on_ho2");
+
 const project_link = document.querySelector("#project_link");
 const myData = {
   projects: [
@@ -194,4 +197,18 @@ window.addEventListener("resize", () => {
     classic.classList.add("d-none");
     simple.classList.remove("d-none");
   }
+});
+console.log(on_ho1);
+
+prev_card.addEventListener("mouseover", () => {
+  on_ho1.classList.add("on_hover");
+});
+next_card.addEventListener("mouseover", () => {
+  on_ho2.classList.add("on_hover");
+});
+prev_card.addEventListener("mouseout", () => {
+  on_ho1.classList.remove("on_hover");
+});
+next_card.addEventListener("mouseout", () => {
+  on_ho2.classList.remove("on_hover");
 });

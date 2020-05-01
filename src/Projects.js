@@ -58,6 +58,9 @@ const Projects = () => {
             id="prev_card"
             className="project-box prev col-sm-3 col-md-3 col-lg-3"
           >
+            <div id="on_ho1" className="d-none">
+              <h3 className="click_me"> ⬅Click Me </h3>
+            </div>
             <div className="small_project_img">
               <img
                 id="prev_img"
@@ -114,6 +117,9 @@ const Projects = () => {
             id="next_card"
             className="project-box next col-sm-3 col-md-3 col-lg-3"
           >
+            <div id="on_ho2" className="d-none">
+              <h3 className="click_me"> Click Me➡ </h3>
+            </div>
             <div className="small_project_img">
               <img
                 id="next_img"
