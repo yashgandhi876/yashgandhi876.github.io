@@ -74,6 +74,7 @@ const Projects = () => {
             <div className="project-name">
               <h5 id="prev_pro_name">Project Name</h5>
             </div>
+            <hr />
             <div className="describe">
               <p className="container" id="prev_pro_des"></p>
             </div>
@@ -96,6 +97,7 @@ const Projects = () => {
             <div className="project-name">
               <h5 id="now_pro_name">Project Name</h5>
             </div>
+            <hr />
             <div className="describe">
               <p className="container" id="now_pro_des"></p>
             </div>
@@ -131,6 +133,7 @@ const Projects = () => {
             <div className="project-name">
               <h5 id="next_pro_name">Project Name</h5>
             </div>
+            <hr />
             <div className="describe">
               <p className="container truncate" id="next_pro_des"></p>
             </div>

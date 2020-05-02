@@ -25,7 +25,7 @@ const Symbols = () => {
           alt="icon of github"
           src={require("./img/github.png")}
           title="Open-source on GitHub"
-          className="mr-3 mb-5 ml-3"
+          className="mr-3 mb-5 ml-3 "
           width="40px"
         />
       </a>

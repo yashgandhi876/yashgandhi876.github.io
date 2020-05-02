@@ -58,15 +58,16 @@ body {
 }
 
 body::-webkit-scrollbar {
-  width: 22px;
+  width: 15px;
 }
 
 body::-webkit-scrollbar-track {
-  box-shadow: inset 0px 0px 6px grey;
+  /* box-shadow: inset 0px 0px 5px orange; */
+  box-shadow: none;
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: lightgrey;
+  background-color: #ffae42;
   border-radius: 10px;
 }
 
