@@ -48,7 +48,7 @@ let current = 1;
 const projects = [
   {
     img: Portfolio,
-    project_name: "PortFolio in React",
+    project_name: "Portfolio in React",
     description:
       "I create portfolio to showcase my certification, my skills all about me my all project also there. I build website in React, Bootstrap etc.",
     link: "https://yashgandhi.tech/",
