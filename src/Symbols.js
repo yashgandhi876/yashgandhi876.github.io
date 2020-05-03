@@ -42,6 +42,13 @@ const Symbols = () => {
           width="40px"
         />
       </a>
+      <img
+        alt="icon of love"
+        src={require("./img/love.webp")}
+        className=" mb-5 ml-3"
+        title="Made with love"
+        width="35px"
+      />
     </div>
   );
 };
