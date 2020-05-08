@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  scroll-behavior: smooth !important;
   font-family: "Poppins", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
