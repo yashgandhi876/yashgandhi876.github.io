@@ -1,16 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import App from "./App";
+import App from "./Components/App";
 import * as serviceWorker from "./serviceWorker";
-import wlogo from "./img/wlogo.png";
-import Sign from "./img/Sign.png";
-import Cal from "./img/Cal.jpg";
-import Mes1 from "./img/mes1.jpg";
-import Antakshari from "./img/antakshari.jpg";
-import Snake_Ladder from "./img/s_l.jpg";
-import Tic_Tac_Toe from "./img/tic_tac_toe.jpg";
-import Portfolio from "./img/portfolio.jpg";
+import wlogo from "./assets/wlogo.png";
+import Sign from "./assets/Sign.png";
+import Cal from "./assets/Cal.jpg";
+import Mes1 from "./assets/mes1.jpg";
+import Antakshari from "./assets/antakshari.jpg";
+import Snake_Ladder from "./assets/s_l.jpg";
+import Tic_Tac_Toe from "./assets/tic_tac_toe.jpg";
+import Portfolio from "./assets/portfolio.jpg";
 
 ReactDOM.render(
   <React.StrictMode>

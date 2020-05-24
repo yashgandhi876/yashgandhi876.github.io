@@ -7,7 +7,7 @@ const Intro = () => {
         <h1 className="pt-4">
           Hey, I'm Yash
           <img
-            src={require("./img/lng.png")}
+            src={require("../assets/lng.png")}
             alt="logo"
             style={{ width: "55px" }}
           />

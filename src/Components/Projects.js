@@ -74,7 +74,7 @@ const Projects = () => {
               <img
                 id="prev_img"
                 className="small_inner-project-img"
-                src={require("./img/s_l.jpg")}
+                src={require("../assets/s_l.jpg")}
                 alt=""
                 width="100%"
                 height="100%"

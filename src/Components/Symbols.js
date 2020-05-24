@@ -10,7 +10,7 @@ const Symbols = () => {
       >
         <img
           alt="icon of reactjs"
-          src={require("./img/logo.svg")}
+          src={require("../assets/logo.svg")}
           className="ml-3 App-logo mb-5"
           title="Created using React"
           width="60px"
@@ -23,7 +23,7 @@ const Symbols = () => {
       >
         <img
           alt="icon of github"
-          src={require("./img/github.png")}
+          src={require("../assets/github.png")}
           title="Open-source on GitHub"
           className="mr-3 mb-5 ml-3 "
           width="40px"
@@ -36,7 +36,7 @@ const Symbols = () => {
       >
         <img
           alt="icon of netlify"
-          src={require("./img/netlify.png")}
+          src={require("../assets/netlify.png")}
           className=" mb-5"
           title="Hosted by Netlify"
           width="40px"
@@ -44,7 +44,7 @@ const Symbols = () => {
       </a>
       <img
         alt="icon of love"
-        src={require("./img/love.webp")}
+        src={require("../assets/love.webp")}
         className=" mb-5 ml-3"
         title="Made with love"
         width="35px"

@@ -11,7 +11,7 @@ const Navbar = () => {
           <img
             className="mt-3"
             id="ss"
-            src={require("./img/Sign.png")}
+            src={require("../assets/Sign.png")}
             alt="signature"
           />
         </a>
