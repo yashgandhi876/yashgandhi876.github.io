@@ -38,7 +38,7 @@ const Symbols = () => {
           alt="icon of netlify"
           src={require("./img/netlify.png")}
           className=" mb-5"
-          title="Hostby by Netlify"
+          title="Hosted by Netlify"
           width="40px"
         />
       </a>

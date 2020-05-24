@@ -10,31 +10,39 @@ const Projects = () => {
           <br />
           <ul style={{ listStyleType: "none" }}>
             <ProjectItems
+              href="https://yashgandhi.tech/"
+              link="Portfolio in React"
+              par="I create portfolio to showcase my certification, my skills all about me my all project also there. I build website in React, Bootstrap etc.."
+            />
+            <br />
+            <ProjectItems
               href="http://mescoepune.org/alumni/"
               link="College Alumni Portal"
-              par="It's team project, our college gave us an opportunity to work on
-                live project from scratch. We used latest technology like HTML5,
-                CSS3, BootStrap4 and Vanilla JavaScript ( ES6+ ) to create
-                website."
+              par="We design and develop website for our college.
+               This for our college alumni. My role in this internship is to design web pages,
+                make and handle database. We mainly use technology like 
+                Vanilla JavaScript ES6+ , HTML, Bootstrap.s"
             />
             <br />
             <ProjectItems
               href="https://github.com/yashgandhi2020/Antakshri_Game_With_Bot"
               link="Antakshari With Bot"
-              par="Anatakshari game is basically we have to sing song which starts
-              from last letter of privous song sing by opponent. I create this
-              game using python. &lt;br /&gt;
+              par="I created Antakshari game with bot using Python. In this game player can't win solo. Logic behind this game is to bot remember last letter on song where u loss & throw song which start from that letter only. Human can not remember that much so it is really hard to win. &lt;br /&gt;
               &lt;br /&gt;
               Why BOT? &lt;br /&gt;( This is my first intelligent game and you will
               definitely lose game ; )"
             />
             <br />
             <ProjectItems
-              href="https://github.com/yashgandhi2020/gitcheatsheet"
-              link="GitHub Cheat Sheet"
-              par="I created github cheat sheet for newbies in CS. It content all
-              basic command, that will help to start with git & github. I used
-              Mark-Down to create cheat sheet."
+              href="https://yashgandhi2020.github.io/Calculator/"
+              link="Calculator using React"
+              par="I create an web application Calculator using React. It is work with full functionality of keyboard."
+            />
+            <br />
+            <ProjectItems
+              href="https://yashgandhi2020.github.io/Tic-Tac_Toe/"
+              link="Tic-Tac-Toe Game"
+              par="Tic-Tac-Toe is our favorite game made using HTML,CSS,JS. You can play game right now if you want 😁."
             />
             <br />
             <ProjectItems
@@ -43,6 +51,7 @@ const Projects = () => {
               par="I created Snake and Ladder Game in second year for engineering
               using C. it has no UI, you can play on terminal."
             />
+            <br />
           </ul>
         </div>
       </div>

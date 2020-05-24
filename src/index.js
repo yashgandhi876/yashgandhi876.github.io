@@ -85,8 +85,8 @@ const projects = [
     img: Tic_Tac_Toe,
     project_name: "Tic-Tac-Toe Game",
     description:
-      "Tic-Tac-Toe is our favorite game made using Python. Simple game on terminal.",
-    link: "https://github.com/yashgandhi2020/Tic-tac-toe-Game",
+      "Tic-Tac-Toe is our favorite game made using HTML,CSS,JS. You can play game right now if you want 😁",
+    link: "https://yashgandhi2020.github.io/Tic-Tac_Toe/",
   },
 ];
 
