@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 class Navbar extends Component {
   render() {
     let links = {
-      color: "#2d2d2f",
+      color: "#fff",
     };
     return (
       <div className="header container">

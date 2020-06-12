@@ -1,5 +1,5 @@
 body {
-  color: #2d2d2f !important;
+  color: #fff !important;
   overflow-x: hidden;
   background-image: url(../assets/dessd.jpg);
   background-attachment: fixed;
@@ -9,7 +9,7 @@ body {
 }
 
 .main {
-  background-color: rgba(255, 249, 249, 0.7);
+  background-color: rgba(10, 8, 8, 0.884);
   min-height: 100vh;
   height: 100%;
 }
