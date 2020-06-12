@@ -233,7 +233,7 @@ class Projects extends Component {
               className="project-box prev col-sm-3 col-md-3 col-lg-3"
             >
               <div id="on_ho1" ref={this.on_ho1} className="d-none">
-                <h3 className="click_me"> ⬅Click Me </h3>
+                <h1 className="click_me"> ⬅ </h1>
               </div>
               <div className="small_project_img">
                 <img
@@ -310,7 +310,7 @@ class Projects extends Component {
               className="project-box next col-sm-3 col-md-3 col-lg-3"
             >
               <div id="on_ho2" ref={this.on_ho2} className="d-none">
-                <h3 className="click_me"> Click Me➡ </h3>
+                <h1 className="click_me"> ➡ </h1>
               </div>
               <div className="small_project_img">
                 <img
