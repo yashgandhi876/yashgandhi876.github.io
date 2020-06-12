@@ -57,7 +57,8 @@ class Home extends Component {
             .
           </p>
           <p>
-            I share some good tips about web development and some cool stuff on twitter you can{" "}
+            I share some good tips about web development and some cool stuff on
+            twitter you can{" "}
             <a
               style={style}
               target="_blank"
@@ -68,7 +69,7 @@ class Home extends Component {
             </a>
           </p>
           <p>
-            href you can read more{" "}
+            you can read more{" "}
             <Link style={style} to="/aboutme">
               about me here
             </Link>
