@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, createRef } from "react";
 import ProjectItems from "./ProjectItems";
 import "./projects.css";
 import Cal from "../assets/Cal.jpg";
@@ -9,24 +9,25 @@ import Tic_Tac_Toe from "../assets/tic_tac_toe.jpg";
 import Portfolio from "../assets/portfolio.jpg";
 
 class Projects extends Component {
+  prev_card = createRef();
+  next_card = createRef();
+  prev_card_virtual = createRef();
+  prev_img = createRef();
+  now_img = createRef();
+  next_img = createRef();
+  prev_pro_name = createRef();
+  now_pro_name = createRef();
+  next_pro_name = createRef();
+  prev_pro_des = createRef();
+  now_pro_des = createRef();
+  next_pro_des = createRef();
+  simple = createRef();
+  classic = createRef();
+  on_ho1 = createRef();
+  on_ho2 = createRef();
+  project_link = createRef();
+
   componentDidMount() {
-    const prev_card = document.querySelector("#prev_card");
-    const next_card = document.querySelector("#next_card");
-    const prev_card_virtual = document.querySelector("#prev_card_virtual");
-    const prev_img = document.querySelector("#prev_img");
-    const now_img = document.querySelector("#now_img");
-    const next_img = document.querySelector("#next_img");
-    const prev_pro_name = document.querySelector("#prev_pro_name");
-    const now_pro_name = document.querySelector("#now_pro_name");
-    const next_pro_name = document.querySelector("#next_pro_name");
-    const prev_pro_des = document.querySelector("#prev_pro_des");
-    const now_pro_des = document.querySelector("#now_pro_des");
-    const next_pro_des = document.querySelector("#next_pro_des");
-    const simple = document.querySelector("#simple");
-    const classic = document.querySelector("#classic");
-    const on_ho1 = document.querySelector("#on_ho1");
-    const on_ho2 = document.querySelector("#on_ho2");
-    const project_link = document.querySelector("#project_link");
     let current = 1;
     const projects = [
       {
@@ -76,20 +77,24 @@ class Projects extends Component {
     let loadData = () => {
       try {
         if (current !== 0) {
-          prev_img.src = projects[current - 1].img;
-          prev_pro_name.innerHTML = projects[current - 1].project_name;
-          prev_pro_des.innerHTML = projects[current - 1].description;
+          this.prev_img.current.src = projects[current - 1].img;
+          this.prev_pro_name.current.innerHTML =
+            projects[current - 1].project_name;
+          this.prev_pro_des.current.innerHTML =
+            projects[current - 1].description;
         }
 
-        now_img.src = projects[current].img;
-        now_pro_name.innerHTML = projects[current].project_name;
-        now_pro_des.innerHTML = projects[current].description;
-        project_link.href = projects[current].link;
+        this.now_img.current.src = projects[current].img;
+        this.now_pro_name.current.innerHTML = projects[current].project_name;
+        this.now_pro_des.current.innerHTML = projects[current].description;
+        this.project_link.current.href = projects[current].link;
 
         if (current !== 5) {
-          next_img.src = projects[current + 1].img;
-          next_pro_name.innerHTML = projects[current + 1].project_name;
-          next_pro_des.innerHTML = projects[current + 1].description;
+          this.next_img.current.src = projects[current + 1].img;
+          this.next_pro_name.current.innerHTML =
+            projects[current + 1].project_name;
+          this.next_pro_des.current.innerHTML =
+            projects[current + 1].description;
         }
       } catch (e) {
         console.error(e);
@@ -98,62 +103,62 @@ class Projects extends Component {
 
     loadData();
 
-    prev_card.addEventListener("click", () => {
+    this.prev_card.current.addEventListener("click", () => {
       current--;
       loadData();
       if (current === 0) {
-        prev_card.classList.add("d-none");
-        prev_card_virtual.classList.remove("d-none");
-        next_card.classList.remove("d-none");
+        this.prev_card.current.classList.add("d-none");
+        this.prev_card_virtual.current.classList.remove("d-none");
+        this.next_card.current.classList.remove("d-none");
       } else {
-        prev_card.classList.remove("d-none");
-        prev_card_virtual.classList.add("d-none");
-        next_card.classList.remove("d-none");
+        this.prev_card.current.classList.remove("d-none");
+        this.prev_card_virtual.current.classList.add("d-none");
+        this.next_card.current.classList.remove("d-none");
       }
     });
-    next_card.addEventListener("click", () => {
+    this.next_card.current.addEventListener("click", () => {
       current++;
       loadData();
       if (current === 5) {
-        prev_card.classList.remove("d-none");
-        prev_card_virtual.classList.add("d-none");
-        next_card.classList.add("d-none");
+        this.prev_card.current.classList.remove("d-none");
+        this.prev_card_virtual.current.classList.add("d-none");
+        this.next_card.current.classList.add("d-none");
       } else {
-        prev_card.classList.remove("d-none");
-        prev_card_virtual.classList.add("d-none");
-        next_card.classList.remove("d-none");
+        this.prev_card.current.classList.remove("d-none");
+        this.prev_card_virtual.current.classList.add("d-none");
+        this.next_card.current.classList.remove("d-none");
       }
     });
 
     if (window.outerWidth >= 768) {
-      simple.classList.add("d-none");
-      classic.classList.remove("d-none");
+      this.simple.current.classList.add("d-none");
+      this.classic.current.classList.remove("d-none");
     } else if (window.outerWidth < 768) {
-      classic.classList.add("d-none");
-      simple.classList.remove("d-none");
+      this.classic.current.classList.add("d-none");
+      this.simple.current.classList.remove("d-none");
     }
 
     window.addEventListener("resize", () => {
       if (window.outerWidth >= 768) {
-        simple.classList.add("d-none");
-        classic.classList.remove("d-none");
+        this.simple.current.classList.add("d-none");
+        this.classic.current.classList.remove("d-none");
       } else if (window.outerWidth < 768) {
-        classic.classList.add("d-none");
-        simple.classList.remove("d-none");
+        this.classic.current.classList.add("d-none");
+        this.simple.current.classList.remove("d-none");
       }
     });
 
-    prev_card.addEventListener("mouseover", () => {
-      on_ho1.classList.add("on_hover");
+    this.prev_card.current.addEventListener("mouseover", () => {
+      this.on_ho1.current.classList.add("on_hover");
     });
-    next_card.addEventListener("mouseover", () => {
-      on_ho2.classList.add("on_hover");
+    this.next_card.current.addEventListener("mouseover", () => {
+      this.on_ho2.current.classList.add("on_hover");
     });
-    prev_card.addEventListener("mouseout", () => {
-      on_ho1.classList.remove("on_hover");
+    this.prev_card.current.addEventListener("mouseout", () => {
+      this.on_ho1.current.classList.remove("on_hover");
     });
-    next_card.addEventListener("mouseout", () => {
-      on_ho2.classList.remove("on_hover");
+    this.next_card.current.addEventListener("mouseout", () => {
+      this.on_ho2.current.classList.remove("on_hover");
     });
 
     // project
@@ -162,7 +167,7 @@ class Projects extends Component {
   render() {
     return (
       <div className="container" id="projects">
-        <div className="container" id="simple">
+        <div className="container" ref={this.simple} id="simple">
           <h3 className="pt-4">Projects</h3>
           <div className="container">
             <br />
@@ -213,24 +218,27 @@ class Projects extends Component {
             </ul>
           </div>
         </div>
-        <div className="container" id="classic">
+        <div className="container" ref={this.classic} id="classic">
           <h3 className="pt-4">Projects</h3>
           <div className="row container mt-5">
             {/* <!-- prev --> */}
             <div
               id="prev_card_virtual"
+              ref={this.prev_card_virtual}
               className="prev col-sm-3 col-md-3 col-lg-3 d-none"
             ></div>
             <div
               id="prev_card"
+              ref={this.prev_card}
               className="project-box prev col-sm-3 col-md-3 col-lg-3"
             >
-              <div id="on_ho1" className="d-none">
+              <div id="on_ho1" ref={this.on_ho1} className="d-none">
                 <h3 className="click_me"> ⬅Click Me </h3>
               </div>
               <div className="small_project_img">
                 <img
                   id="prev_img"
+                  ref={this.prev_img}
                   className="small_inner-project-img"
                   src={require("../assets/s_l.jpg")}
                   alt=""
@@ -239,11 +247,17 @@ class Projects extends Component {
                 />
               </div>
               <div className="project-name">
-                <h5 id="prev_pro_name">Project Name</h5>
+                <h5 id="prev_pro_name" ref={this.prev_pro_name}>
+                  Project Name
+                </h5>
               </div>
               <hr />
               <div className=" desmall describe">
-                <p className="container" id="prev_pro_des"></p>
+                <p
+                  className="container"
+                  ref={this.prev_pro_des}
+                  id="prev_pro_des"
+                ></p>
               </div>
             </div>
             {/* <!-- now --> */}
@@ -254,6 +268,7 @@ class Projects extends Component {
               <div className="project-img">
                 <img
                   id="now_img"
+                  ref={this.now_img}
                   className="inner-project-img"
                   src=""
                   alt=""
@@ -262,15 +277,22 @@ class Projects extends Component {
                 />
               </div>
               <div className="project-name">
-                <h5 id="now_pro_name">Project Name</h5>
+                <h5 id="now_pro_name" ref={this.now_pro_name}>
+                  Project Name
+                </h5>
               </div>
               <hr />
               <div className="describe">
-                <p className="container" id="now_pro_des"></p>
+                <p
+                  className="container"
+                  ref={this.now_pro_des}
+                  id="now_pro_des"
+                ></p>
               </div>
               <div className="btn-pro">
                 <a
                   id="project_link"
+                  ref={this.project_link}
                   className="view-pro"
                   href="./"
                   target="_blank"
@@ -284,25 +306,33 @@ class Projects extends Component {
             {/* <!-- next --> */}
             <div
               id="next_card"
+              ref={this.next_card}
               className="project-box next col-sm-3 col-md-3 col-lg-3"
             >
-              <div id="on_ho2" className="d-none">
+              <div id="on_ho2" ref={this.on_ho2} className="d-none">
                 <h3 className="click_me"> Click Me➡ </h3>
               </div>
               <div className="small_project_img">
                 <img
                   id="next_img"
+                  ref={this.next_img}
                   className="small_inner-project-img"
                   src=""
                   alt=""
                 />
               </div>
               <div className="project-name">
-                <h5 id="next_pro_name">Project Name</h5>
+                <h5 id="next_pro_name" ref={this.next_pro_name}>
+                  Project Name
+                </h5>
               </div>
               <hr />
               <div className=" desmall describe">
-                <p className="container truncate" id="next_pro_des"></p>
+                <p
+                  className="container truncate"
+                  ref={this.next_pro_des}
+                  id="next_pro_des"
+                ></p>
               </div>
             </div>
           </div>
