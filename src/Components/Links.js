@@ -4,9 +4,10 @@ import Singlelinks from "./SingleLinks";
 const Links = () => {
   return (
     <div className="container" id="Contact">
+    <br />
       <div className="container">
         <h3>Contact</h3>
-        <br />
+        <hr className="ununs underline" />
         <div className="container-fluid row pl-1 pr-0">
           <div className="container col-sm-12 col-lg-6 col-md-6 pr-0">
             <ul>
@@ -25,10 +26,10 @@ const Links = () => {
               />
               <br />
               <Singlelinks
-                Label="FaceBook :"
-                href="https://www.facebook.com/profile.php?id=100034058533973"
+                Label="YouTube :"
+                href="https://www.youtube.com/channel/UCyB_tsmZLM0nK2yTYF2ZaaA/"
                 name="Yash Gandhi"
-                title="Pure Time Pass Active once in year."
+                title="Know more about JavaScript"
               />
             </ul>
             <br />

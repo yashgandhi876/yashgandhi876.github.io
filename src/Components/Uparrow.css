@@ -1,0 +1,19 @@
+.uparrow {
+  cursor: pointer;
+  padding: 5px !important;
+  margin: 5px !important;
+  color: #2d2d2f;
+  font-size: 50px !important;
+}
+
+.upc {
+  position: fixed;
+  display: flex;
+  bottom: 30px;
+  right: 30px;
+}
+.btn11 {
+  outline: none !important;
+  border: 0;
+  background-color: transparent !important;
+}

@@ -1,0 +1,36 @@
+.mainsss {
+  width: 70% !important;
+  margin-bottom: 50px;
+  margin-top: 10px;
+  padding: 0px;
+}
+
+.namep {
+  margin-top: 0px !important;
+}
+
+.aboutme {
+  margin: 5px 0px;
+}
+p {
+  margin: 20px 0px 0px 0px !important;
+  text-align: justify;
+  font-size: 20px;
+}
+
+.line {
+  border-bottom: 2px solid grey;
+}
+
+@media (max-width: 400px) {
+  .main {
+    width: 100% !important;
+  }
+}
+
+@media (min-width: 800px) {
+  .photo img {
+    height: 600px;
+    object-fit: contain;
+  }
+}

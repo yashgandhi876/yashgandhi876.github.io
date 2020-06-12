@@ -1,0 +1,14 @@
+.typingline {
+  transform: "scaleY(1)";
+
+  transform-origin: center;
+  animation: createBox 5s;
+}
+@keyframes createBox {
+  from {
+    transform-styl: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
