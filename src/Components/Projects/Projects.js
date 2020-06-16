@@ -70,7 +70,7 @@ class Projects extends Component {
         project_name: "Tic-Tac-Toe Game",
         description:
           "Tic-Tac-Toe is our favorite game made using HTML,CSS,JS. You can play game right now if you want.",
-        link: "https://yashgandhi2020.github.io/Tic-Tac_Toe/",
+        link: "https://yashgandhi2020.github.io/tictactoe/",
       },
     ];
     // projectjs
