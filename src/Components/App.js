@@ -1,13 +1,13 @@
 import React, { Component } from "react";
 import "./App.css";
-import Projects from "./Projects";
-import Symbols from "./Symbols";
-import Links from "./Links";
-import Navbar from "./Navbar";
-import Uparrow from "./Uparrow";
-import AboutMe from "./AboutMe";
-import Blogs from "./Blogs";
-import Home from "./Home";
+import Projects from "./Projects/Projects";
+import Symbols from "./Symbols/Symbols";
+import Links from "./Links/Links";
+import Navbar from "./Navbar/Navbar";
+import Uparrow from "./Uparrow/Uparrow";
+import AboutMe from "./AboutMe/AboutMe";
+import Blogs from "./Blogs/Blogs";
+import Home from "./Home/Home";
 
 import { BrowserRouter as Router, Route } from "react-router-dom";
 

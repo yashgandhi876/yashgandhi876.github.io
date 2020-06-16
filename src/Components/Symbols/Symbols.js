@@ -7,7 +7,7 @@ const Symbols = () => {
         made with{" "}
         <img
           alt="icon of love"
-          src={require("../assets/love.webp")}
+          src={require("../../assets/love.webp")}
           className="  "
           title="Made with love"
           width="25px"

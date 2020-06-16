@@ -7,20 +7,21 @@ class Navbar extends Component {
       color: "#fff",
     };
     return (
-      <div className="header container">
+      <div className="header container" style={{ padding: "0px" }}>
         <nav
           id="nav2"
-          className="navbar navbar-light navbar-expand-lg bg-transpernt "
+          style={{ padding: "0px" }}
+          className="navbar navbar-dark navbar-expand-lg bg-transpernt "
         >
-          <a className="navbar-brand" href="/">
+          <Link className="navbar-brand" to="/">
             <img
               className="mt-3"
               id="ss"
-              src={require("../assets/wlogo.png")}
+              src={require("../../assets/wlogo.png")}
               alt="signature"
               width="100%"
             />
-          </a>
+          </Link>
 
           <button
             style={{ outline: "none" }}

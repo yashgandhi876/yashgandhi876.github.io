@@ -18,9 +18,9 @@ class Home extends Component {
     };
     return (
       <div className="container ma">
-        <div className="row mt-5 mr-3 ml-3">
+        <div className="row mt-5 mr-3 ml-1">
           <h1>Hey, I'm Yash Gandhi</h1>
-          <img src={require("../assets/lng.png")} alt="Me" width="70px" />
+          <img src={require("../../assets/lng.png")} alt="Me" width="70px" />
         </div>
         <div
           style={{ justifyContent: "center" }}
@@ -46,34 +46,31 @@ class Home extends Component {
         </div>
         <div className="mt-5 ">
           <p>
-            I made cool projects and share with world{" "}
+            I made cool projects and{" "}
             <Link style={style} to="/projects">
-              you can check here
-            </Link>
-            . I can help you with your projects also{" "}
-            <Link style={style} to="/projects">
-              Contact me
-            </Link>
-            .
+              share with world.
+            </Link>{" "}
+            I'll help you with your projects also{" "}
+            <a style={style} href="#contact">
+              Contact me.
+            </a>
           </p>
           <p>
-            I share some good tips about web development and some cool stuff on
-            twitter you can{" "}
+            Most of the time I talk about web development and some cool stuff on{" "}
             <a
               style={style}
               target="_blank"
               rel="noopener noreferrer"
               href="https://twitter.com/yashgandhi876"
             >
-              follow me here
+              twitter.
             </a>
           </p>
           <p>
             you can read more{" "}
             <Link style={style} to="/aboutme">
-              about me here
+              about me.
             </Link>
-            .
           </p>
         </div>
       </div>

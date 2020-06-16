@@ -1,12 +1,12 @@
 import React, { Component, createRef } from "react";
-import ProjectItems from "./ProjectItems";
+import ProjectItems from "./ProjectItems/ProjectItems";
 import "./projects.css";
-import Cal from "../assets/Cal.jpg";
-import Mes1 from "../assets/mes1.jpg";
-import Antakshari from "../assets/antakshari.jpg";
-import Snake_Ladder from "../assets/s_l.jpg";
-import Tic_Tac_Toe from "../assets/tic_tac_toe.jpg";
-import Portfolio from "../assets/portfolio.jpg";
+import Cal from "../../assets/Cal.jpg";
+import Mes1 from "../../assets/mes1.jpg";
+import Antakshari from "../../assets/antakshari.jpg";
+import Snake_Ladder from "../../assets/s_l.jpg";
+import Tic_Tac_Toe from "../../assets/tic_tac_toe.jpg";
+import Portfolio from "../../assets/portfolio.jpg";
 
 class Projects extends Component {
   prev_card = createRef();
@@ -69,7 +69,7 @@ class Projects extends Component {
         img: Tic_Tac_Toe,
         project_name: "Tic-Tac-Toe Game",
         description:
-          "Tic-Tac-Toe is our favorite game made using HTML,CSS,JS. You can play game right now if you want 😁",
+          "Tic-Tac-Toe is our favorite game made using HTML,CSS,JS. You can play game right now if you want.",
         link: "https://yashgandhi2020.github.io/Tic-Tac_Toe/",
       },
     ];
@@ -220,7 +220,7 @@ class Projects extends Component {
         </div>
         <div className="container" ref={this.classic} id="classic">
           <h3 className="pt-4">Projects</h3>
-          <div className="row container mt-5">
+          <div className="row startPro container">
             {/* <!-- prev --> */}
             <div
               id="prev_card_virtual"
@@ -240,7 +240,7 @@ class Projects extends Component {
                   id="prev_img"
                   ref={this.prev_img}
                   className="small_inner-project-img"
-                  src={require("../assets/s_l.jpg")}
+                  src={require("../../assets/s_l.jpg")}
                   alt=""
                   width="100%"
                   height="100%"
@@ -327,10 +327,11 @@ class Projects extends Component {
                 </h5>
               </div>
               <hr />
-              <div className=" desmall describe">
+              <div className="desmall describe">
                 <p
-                  className="container truncate"
+                  className="container "
                   ref={this.next_pro_des}
+                  style={{ margin: "0px" }}
                   id="next_pro_des"
                 ></p>
               </div>

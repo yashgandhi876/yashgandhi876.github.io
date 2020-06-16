@@ -1,11 +1,11 @@
 import React from "react";
-import Singlelinks from "./SingleLinks";
+import Singlelinks from "./SingleLinks/SingleLinks";
 
 const Links = () => {
   return (
-    <div className="container" id="Contact">
-    <br />
-      <div className="container">
+    <div className="container"  id="Contact">
+      <br />
+      <div className="">
         <h3>Contact</h3>
         <hr className="ununs underline" />
         <div className="container-fluid row pl-1 pr-0">
@@ -39,7 +39,7 @@ const Links = () => {
               <Singlelinks
                 Label="Email :"
                 href="mailto:yashgandhi876@gmail.com"
-                name="yashgandhi876"
+                name="yashgandhi876@gmail.com"
                 title="yashgandhi876@gmail.com"
               />
               <br />

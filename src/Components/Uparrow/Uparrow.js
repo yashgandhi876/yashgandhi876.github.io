@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import "./Uparrow.css";
+
 class Uparrow extends Component {
+  
   componentDidMount() {
     const btn2 = document.querySelector(`#btn2`);
     const upar = document.querySelector("#upar");
