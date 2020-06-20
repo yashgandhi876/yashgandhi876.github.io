@@ -49,28 +49,28 @@ class Projects extends Component {
         project_name: "Antakshari game with bot",
         description:
           "I created Antakshari game with bot using Python. In this game player can't win solo. Logic behind this game is to bot remember last letter on song where u loss & throw song which start from that letter only. Human can not remember that much so it is really hard to win.",
-        link: "https://github.com/yashgandhi2020/Antakshri_Game_With_Bot",
+        link: "https://github.com/yashgandhi876/Antakshri_Game_With_Bot",
       },
       {
         img: Cal,
         project_name: "Calculator using React",
         description:
           "I create an web application Calculator using React. It is work with full functionality of keyboard.",
-        link: "https://yashgandhi2020.github.io/Calculator/",
+        link: "https://yashgandhi876.github.io/Calculator/",
       },
       {
         img: Snake_Ladder,
         project_name: "Snake and Ladder Game",
         description:
           "I made this game using C as well as Python. This is simple snake and ladder game, we can play it on terminal.",
-        link: "https://github.com/yashgandhi2020/Snake-Ladder-Game",
+        link: "https://github.com/yashgandhi876/Snake-Ladder-Game",
       },
       {
         img: Tic_Tac_Toe,
         project_name: "Tic-Tac-Toe Game",
         description:
           "Tic-Tac-Toe is our favorite game made using HTML,CSS,JS. You can play game right now if you want.",
-        link: "https://yashgandhi2020.github.io/tictactoe/",
+        link: "https://yashgandhi876.github.io/tictactoe/",
       },
     ];
     // projectjs
@@ -188,7 +188,7 @@ class Projects extends Component {
               />
               <br />
               <ProjectItems
-                href="https://github.com/yashgandhi2020/Antakshri_Game_With_Bot"
+                href="https://github.com/yashgandhi876/Antakshri_Game_With_Bot"
                 link="Antakshari With Bot"
                 par="I created Antakshari game with bot using Python. In this game player can't win solo. Logic behind this game is to bot remember last letter on song where u loss & throw song which start from that letter only. Human can not remember that much so it is really hard to win. &lt;br /&gt;
               &lt;br /&gt;
@@ -197,19 +197,19 @@ class Projects extends Component {
               />
               <br />
               <ProjectItems
-                href="https://yashgandhi2020.github.io/Calculator/"
+                href="https://yashgandhi876.github.io/Calculator/"
                 link="Calculator using React"
                 par="I create an web application Calculator using React. It is work with full functionality of keyboard."
               />
               <br />
               <ProjectItems
-                href="https://yashgandhi2020.github.io/Tic-Tac_Toe/"
+                href="https://yashgandhi876.github.io/Tic-Tac_Toe/"
                 link="Tic-Tac-Toe Game"
                 par="Tic-Tac-Toe is our favorite game made using HTML,CSS,JS. You can play game right now if you want 😁."
               />
               <br />
               <ProjectItems
-                href="https://github.com/yashgandhi2020/Snake-Ladder-Game"
+                href="https://github.com/yashgandhi876/Snake-Ladder-Game"
                 link="Snake & Ladder Game"
                 par="I created Snake and Ladder Game in second year for engineering
               using C. it has no UI, you can play on terminal."

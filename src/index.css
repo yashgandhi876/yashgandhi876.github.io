@@ -20,7 +20,6 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-  /* box-shadow: inset 0px 0px 5px orange; */
   box-shadow: none;
 }
 

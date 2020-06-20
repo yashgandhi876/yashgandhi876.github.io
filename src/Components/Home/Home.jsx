@@ -50,24 +50,23 @@ class Home extends Component {
             <Link style={style} to="/projects">
               share with world.
             </Link>{" "}
-            I'll help you with your projects also{" "}
-            <a style={style} href="#contact">
-              Contact me.
-            </a>
+            I'll help you with your projects also, drop mail at{" "}
+            <span style={style}>yashgandhi876@gmail.com</span>
           </p>
           <p>
-            Most of the time I talk about web development and some cool stuff on{" "}
+            Most of the time, I talk about web development and some cool stuff
+            on my{" "}
             <a
               style={style}
               target="_blank"
               rel="noopener noreferrer"
               href="https://twitter.com/yashgandhi876"
             >
-              twitter.
+              twitter account.
             </a>
           </p>
           <p>
-            you can read more{" "}
+            You can read more{" "}
             <Link style={style} to="/aboutme">
               about me.
             </Link>

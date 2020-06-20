@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import "./App.css";
 import Projects from "./Projects/Projects";
 import Symbols from "./Symbols/Symbols";
-import Links from "./Links/Links";
 import Navbar from "./Navbar/Navbar";
 import Uparrow from "./Uparrow/Uparrow";
 import AboutMe from "./AboutMe/AboutMe";
@@ -22,7 +21,6 @@ class App extends Component {
           <Route path="/blogs" exact component={Blogs} />
           <Route path="/projects" component={Projects} />
           <Route path="/aboutme" component={AboutMe} />
-          <Links />
           <Symbols />
         </div>
       </Router>

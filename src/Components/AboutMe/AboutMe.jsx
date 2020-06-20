@@ -36,13 +36,10 @@ const AboutMe = () => {
           .
         </p>
         <p>
-          I made{" "}
-          <a href="#projects" target="_blank">
-            Projects
-          </a>{" "}
-          using HTML, CSS, JavaScript and pushed on{" "}
+          I made <a href="/projects">Projects</a> using HTML, CSS, JavaScript
+          and pushed on{" "}
           <a
-            href="https://github.com/yashgandhi2020"
+            href="https://github.com/yashgandhi876"
             target="_blank"
             rel="noopener noreferrer"
           >

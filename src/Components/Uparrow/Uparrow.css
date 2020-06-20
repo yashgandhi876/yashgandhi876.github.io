@@ -1,16 +1,15 @@
 .uparrow {
   cursor: pointer;
-  padding: 5px !important;
-  margin: 5px !important;
   color: #fff;
-  font-size: 50px !important;
+  font-size: 35px !important;
+  z-index: 400;
 }
 
 .upc {
   position: fixed;
   display: flex;
-  bottom: 30px;
-  right: 30px;
+  bottom: 20px;
+  right: 20px;
 }
 .btn11 {
   outline: none !important;

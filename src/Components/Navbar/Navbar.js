@@ -47,14 +47,6 @@ class Navbar extends Component {
               <Link to="/blogs" style={links} className=" nav-item nav-link">
                 Blogs
               </Link>
-              <a
-                id="navitem3"
-                style={links}
-                className="nav-item  nav-link"
-                href="#Contact"
-              >
-                Contact
-              </a>
               <Link to="/aboutme" style={links} className="nav-item  nav-link">
                 About
               </Link>
