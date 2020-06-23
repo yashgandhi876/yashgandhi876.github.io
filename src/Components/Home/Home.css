@@ -6,13 +6,13 @@
 }
 @keyframes createBox {
   from {
-    transform-styl: scale(0);
+    transform-style: scale(0);
   }
   to {
     transform: scale(1);
   }
 }
 
-.ma {
-  padding-bottom: 80px;
+.mainss {
+  padding-bottom: 100px;
 }

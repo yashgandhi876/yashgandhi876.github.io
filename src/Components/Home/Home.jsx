@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Typewriter from "typewriter-effect";
 import { Link } from "react-router-dom";
+import "./Home.css";
 
 class Home extends Component {
   constructor(props) {
@@ -17,10 +18,14 @@ class Home extends Component {
       backgroundColor: "rgba(163, 159, 220,0.5)",
     };
     return (
-      <div className="container ma">
+      <div className="container mainss">
         <div className="row mt-5 mr-3 ml-1">
           <h1>Hey, I'm Yash</h1>
-          <img src={require("../../assets/Images/lng.png")} alt="Me" width="70px" />
+          <img
+            src={require("../../assets/Images/lng.png")}
+            alt="Me"
+            width="70px"
+          />
         </div>
         <div
           style={{ justifyContent: "center" }}
