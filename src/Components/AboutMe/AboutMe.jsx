@@ -13,7 +13,7 @@ const AboutMe = () => {
       </div>
       <div class="photo">
         <img
-          src={require("../../assets/mmmmm.jpg")}
+          src={require("../../assets/Images/mmmmm.jpg")}
           alt="yash gandhi"
           width="100%"
         />

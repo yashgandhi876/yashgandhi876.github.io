@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-
+import file from "../../assets/Resume/resume.pdf";
 class Navbar extends Component {
   render() {
     let links = {
@@ -17,7 +17,7 @@ class Navbar extends Component {
             <img
               className="mt-3"
               id="ss"
-              src={require("../../assets/wlogo.png")}
+              src={require("../../assets/Images/wlogo.png")}
               alt="signature"
               width="100%"
             />
@@ -50,6 +50,18 @@ class Navbar extends Component {
               <Link to="/aboutme" style={links} className="nav-item  nav-link">
                 About
               </Link>
+              <a
+                style={{
+                  color: "#fff",
+                  display: "block",
+                  padding: ".5rem 1rem",
+                  textDecoration: "none",
+                }}
+                href={file}
+                download="Yash_Gandhi_Resume.pdf"
+              >
+                Resume
+              </a>
             </div>
           </div>
         </nav>

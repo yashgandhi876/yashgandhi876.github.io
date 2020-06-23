@@ -20,7 +20,7 @@ class Home extends Component {
       <div className="container ma">
         <div className="row mt-5 mr-3 ml-1">
           <h1>Hey, I'm Yash Gandhi</h1>
-          <img src={require("../../assets/lng.png")} alt="Me" width="70px" />
+          <img src={require("../../assets/Images/lng.png")} alt="Me" width="70px" />
         </div>
         <div
           style={{ justifyContent: "center" }}
@@ -34,7 +34,7 @@ class Home extends Component {
                 options={{
                   strings: [
                     " Web Developer",
-                    " Learner",
+                    " Self Learner",
                     " Front-End Developer",
                   ],
                   autoStart: true,

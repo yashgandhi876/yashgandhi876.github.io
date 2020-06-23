@@ -1,12 +1,12 @@
 import React, { Component, createRef } from "react";
 import ProjectItems from "./ProjectItems/ProjectItems";
 import "./projects.css";
-import Cal from "../../assets/Cal.jpg";
-import Mes1 from "../../assets/mes1.jpg";
-import Antakshari from "../../assets/antakshari.jpg";
-import Snake_Ladder from "../../assets/s_l.jpg";
-import Tic_Tac_Toe from "../../assets/tic_tac_toe.jpg";
-import Portfolio from "../../assets/portfolio.jpg";
+import Cal from "../../assets/Images/Cal.jpg";
+import Mes1 from "../../assets/Images/mes1.jpg";
+import Antakshari from "../../assets/Images/antakshari.jpg";
+import Snake_Ladder from "../../assets/Images/s_l.jpg";
+import Tic_Tac_Toe from "../../assets/Images/tic_tac_toe.jpg";
+import Portfolio from "../../assets/Images/portfolio.jpg";
 
 class Projects extends Component {
   prev_card = createRef();
@@ -240,7 +240,7 @@ class Projects extends Component {
                   id="prev_img"
                   ref={this.prev_img}
                   className="small_inner-project-img"
-                  src={require("../../assets/s_l.jpg")}
+                  src={require("../../assets/Images/s_l.jpg")}
                   alt=""
                   width="100%"
                   height="100%"
