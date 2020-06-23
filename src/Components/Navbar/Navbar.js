@@ -9,10 +9,16 @@ class Navbar extends Component {
     this.showMobileNav = createRef();
   }
 
+  handleClick = () => {
+    if (this.showMobileNav.current.classList.contains("collapse")) {
+      this.showMobileNav.current.classList.remove("collapse");
+    } else {
+      this.showMobileNav.current.classList.add("collapse");
+    }
+  };
+
   componentDidMount() {
-    this.togglerbtn.current.addEventListener("click", () => {
-      this.showMobileNav.current.classList.toggle("collapse");
-    });
+    this.togglerbtn.current.addEventListener("click", this.handleClick);
   }
 
   render() {
@@ -64,6 +70,7 @@ class Navbar extends Component {
                 id="navitem1"
                 style={links}
                 className=" nav-item nav-link"
+                onClick={this.handleClick}
               >
                 Projects
               </Link>
@@ -73,6 +80,7 @@ class Navbar extends Component {
                 id="navitem2"
                 style={links}
                 className=" nav-item nav-link"
+                onClick={this.handleClick}
               >
                 Blogs
               </Link>
@@ -81,6 +89,7 @@ class Navbar extends Component {
                 id="navitem3"
                 style={links}
                 className="nav-item  nav-link"
+                onClick={this.handleClick}
               >
                 About
               </Link>
@@ -93,6 +102,7 @@ class Navbar extends Component {
                 }}
                 href={file}
                 download="Yash_Gandhi_Resume.pdf"
+                onClick={this.handleClick}
               >
                 Resume
               </a>

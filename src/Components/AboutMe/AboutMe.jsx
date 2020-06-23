@@ -3,24 +3,24 @@ import "./aboutme.css";
 
 const AboutMe = () => {
   return (
-    <div class="container mainsss">
-      <div class="about">
-        <h1 class="aboutme">About</h1>
+    <div className="container mainsss">
+      <div className="about">
+        <h1 className="aboutme">About</h1>
       </div>
       <hr className="line" />
-      <div class="name">
-        <p class="namep">Hey, I'm Yash Gandhi.</p>
+      <div className="name">
+        <p className="namep">Hey, I'm Yash Gandhi.</p>
       </div>
-      <div class="photo">
+      <div className="photo">
         <img
           src={require("../../assets/Images/mmmmm.jpg")}
           alt="yash gandhi"
           width="100%"
         />
       </div>
-      <div class="des">
-        <h1 class="mt-2">Little More...</h1>
-        <hr class="line" />
+      <div className="des">
+        <h1 className="mt-2">Little More...</h1>
+        <hr className="line" />
         <p>
           I'm software engineer from Pune, IN. I was born in 2000 and grew up in
           shrirampur. I started programming for about 3 years ago. After
@@ -59,9 +59,9 @@ const AboutMe = () => {
           </a>
           .
         </p>
-        <div class="skills">
-          <h1 class="mt-5">Skills...</h1>
-          <hr class="line" />
+        <div className="skills">
+          <h1 className="mt-5">Skills...</h1>
+          <hr className="line" />
           <h5>Specialties:</h5>
           <ul>
             <li>JavaScript (ES6+)</li>

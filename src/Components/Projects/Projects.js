@@ -26,75 +26,113 @@ class Projects extends Component {
   on_ho1 = createRef();
   on_ho2 = createRef();
   project_link = createRef();
+  projects = [
+    {
+      id: 1,
+      img: Portfolio,
+      project_name: "Portfolio in React",
+      description:
+        "I made this portfolio to showcase my skills, my project and people will get know more about me. I made this website using React, JavaScript, Bootstrap, HTML, CSS.",
+      link: "https://yashgandhi.tech/",
+    },
+    {
+      id: 2,
+      img: Mes1,
+      project_name: "MESCOE Alumni Portal ",
+      description:
+        "We design & developed alumni website for our college. My main role in this internship is to develop web pages and handle database. We mainly use Vanilla JavaScript, HTML, Bootstrap to create alumni portal.",
+      link: "http://mescoepune.org/alumni/",
+    },
+    {
+      id: 3,
+      img: Tic_Tac_Toe,
+      project_name: "Tic-Tac-Toe Game",
+      description:
+        "Tic-Tac-Toe is our favorite game made using HTML,CSS,JS. You can play game right now if you want.",
+      link: "https://yashgandhi876.github.io/tictactoe/",
+    },
+    {
+      id: 4,
+      img: Cal,
+      project_name: "Calculator using React",
+      description: "I made Calculator using React, JavaScript.",
+      link: "https://yashgandhi876.github.io/Calculator/",
+    },
+    {
+      id: 5,
+      img: Antakshari,
+      project_name: "Antakshari game with bot",
+      description:
+        "I made Antakshari game with bot using Python. In this game player can't win as solo. Logic behind this game is bot will remember last letter of song where player lose & then machine will throw song which start from that letter only so player have no choice. Human cann't remember that much, so it's really hard to win.",
+      link: "https://github.com/yashgandhi876/Antakshri_Game_With_Bot",
+    },
+    {
+      id: 6,
+      img: Snake_Ladder,
+      project_name: "Snake and Ladder Game",
+      description:
+        "I made this game using C as well as Python. This is simple snake and ladder game, we can play it on terminal.",
+      link: "https://github.com/yashgandhi876/Snake-Ladder-Game",
+    },
+  ];
+
+  checkSize() {
+    if (window.outerWidth >= 768) {
+      this.simple.current.classList.add("d-none");
+      this.classic.current.classList.remove("d-none");
+    } else if (window.outerWidth < 768) {
+      this.classic.current.classList.add("d-none");
+      this.simple.current.classList.remove("d-none");
+    }
+  }
+
+  addHoverEffect = (card, num, event) => {
+    card.current.addEventListener(event, () => {
+      num.current.classList.add("on_hover");
+    });
+  };
+  removeHoverEffect = (card, num, event) => {
+    card.current.addEventListener(event, () => {
+      num.current.classList.remove("on_hover");
+    });
+  };
+
+  addClasses = (card, ope) => {
+    if (ope === "add") card.current.classList.add("d-none");
+    else if (ope === "remove") card.current.classList.remove("d-none");
+  };
 
   componentDidMount() {
     let current = 1;
-    const projects = [
-      {
-        img: Portfolio,
-        project_name: "Portfolio in React",
-        description:
-          "I create portfolio to showcase my certification, my skills all about me my all project also there. I build website in React, Bootstrap etc.",
-        link: "https://yashgandhi.tech/",
-      },
-      {
-        img: Mes1,
-        project_name: "MESCOE Alumni Portal ",
-        description:
-          "We design and develop website for our college. This for our college alumni. My role in this internship is to design web pages, make and handle database. We mainly use technology like Vanilla JavaScript, HTML, Bootstrap.",
-        link: "http://mescoepune.org/alumni/",
-      },
-      {
-        img: Antakshari,
-        project_name: "Antakshari game with bot",
-        description:
-          "I created Antakshari game with bot using Python. In this game player can't win solo. Logic behind this game is to bot remember last letter on song where u loss & throw song which start from that letter only. Human can not remember that much so it is really hard to win.",
-        link: "https://github.com/yashgandhi876/Antakshri_Game_With_Bot",
-      },
-      {
-        img: Cal,
-        project_name: "Calculator using React",
-        description:
-          "I create an web application Calculator using React. It is work with full functionality of keyboard.",
-        link: "https://yashgandhi876.github.io/Calculator/",
-      },
-      {
-        img: Snake_Ladder,
-        project_name: "Snake and Ladder Game",
-        description:
-          "I made this game using C as well as Python. This is simple snake and ladder game, we can play it on terminal.",
-        link: "https://github.com/yashgandhi876/Snake-Ladder-Game",
-      },
-      {
-        img: Tic_Tac_Toe,
-        project_name: "Tic-Tac-Toe Game",
-        description:
-          "Tic-Tac-Toe is our favorite game made using HTML,CSS,JS. You can play game right now if you want.",
-        link: "https://yashgandhi876.github.io/tictactoe/",
-      },
-    ];
+
     // projectjs
     let loadData = () => {
       try {
         if (current !== 0) {
-          this.prev_img.current.src = projects[current - 1].img;
-          this.prev_pro_name.current.innerHTML =
-            projects[current - 1].project_name;
-          this.prev_pro_des.current.innerHTML =
-            projects[current - 1].description;
+          this.prev_img.current.src = this.projects[current - 1].img;
+          this.prev_pro_name.current.innerHTML = this.projects[
+            current - 1
+          ].project_name;
+          this.prev_pro_des.current.innerHTML = this.projects[
+            current - 1
+          ].description;
         }
 
-        this.now_img.current.src = projects[current].img;
-        this.now_pro_name.current.innerHTML = projects[current].project_name;
-        this.now_pro_des.current.innerHTML = projects[current].description;
-        this.project_link.current.href = projects[current].link;
+        this.now_img.current.src = this.projects[current].img;
+        this.now_pro_name.current.innerHTML = this.projects[
+          current
+        ].project_name;
+        this.now_pro_des.current.innerHTML = this.projects[current].description;
+        this.project_link.current.href = this.projects[current].link;
 
         if (current !== 5) {
-          this.next_img.current.src = projects[current + 1].img;
-          this.next_pro_name.current.innerHTML =
-            projects[current + 1].project_name;
-          this.next_pro_des.current.innerHTML =
-            projects[current + 1].description;
+          this.next_img.current.src = this.projects[current + 1].img;
+          this.next_pro_name.current.innerHTML = this.projects[
+            current + 1
+          ].project_name;
+          this.next_pro_des.current.innerHTML = this.projects[
+            current + 1
+          ].description;
         }
       } catch (e) {
         console.error(e);
@@ -107,114 +145,61 @@ class Projects extends Component {
       current--;
       loadData();
       if (current === 0) {
-        this.prev_card.current.classList.add("d-none");
-        this.prev_card_virtual.current.classList.remove("d-none");
-        this.next_card.current.classList.remove("d-none");
+        this.addClasses(this.prev_card, "add");
+        this.addClasses(this.prev_card_virtual, "remove");
+        this.addClasses(this.next_card, "remove");
       } else {
-        this.prev_card.current.classList.remove("d-none");
-        this.prev_card_virtual.current.classList.add("d-none");
-        this.next_card.current.classList.remove("d-none");
+        this.addClasses(this.prev_card, "remove");
+        this.addClasses(this.prev_card_virtual, "add");
+        this.addClasses(this.next_card, "remove");
       }
     });
     this.next_card.current.addEventListener("click", () => {
       current++;
       loadData();
       if (current === 5) {
-        this.prev_card.current.classList.remove("d-none");
-        this.prev_card_virtual.current.classList.add("d-none");
-        this.next_card.current.classList.add("d-none");
+        this.addClasses(this.prev_card, "remove");
+        this.addClasses(this.prev_card_virtual, "add");
+        this.addClasses(this.next_card, "add");
       } else {
-        this.prev_card.current.classList.remove("d-none");
-        this.prev_card_virtual.current.classList.add("d-none");
-        this.next_card.current.classList.remove("d-none");
+        this.addClasses(this.prev_card, "remove");
+        this.addClasses(this.prev_card_virtual, "add");
+        this.addClasses(this.next_card, "remove");
       }
     });
 
-    if (window.outerWidth >= 768) {
-      this.simple.current.classList.add("d-none");
-      this.classic.current.classList.remove("d-none");
-    } else if (window.outerWidth < 768) {
-      this.classic.current.classList.add("d-none");
-      this.simple.current.classList.remove("d-none");
-    }
+    this.checkSize();
 
     window.addEventListener("resize", () => {
-      if (window.outerWidth >= 768) {
-        this.simple.current.classList.add("d-none");
-        this.classic.current.classList.remove("d-none");
-      } else if (window.outerWidth < 768) {
-        this.classic.current.classList.add("d-none");
-        this.simple.current.classList.remove("d-none");
-      }
+      this.checkSize();
     });
 
-    this.prev_card.current.addEventListener("mouseover", () => {
-      this.on_ho1.current.classList.add("on_hover");
-    });
-    this.next_card.current.addEventListener("mouseover", () => {
-      this.on_ho2.current.classList.add("on_hover");
-    });
-    this.prev_card.current.addEventListener("mouseout", () => {
-      this.on_ho1.current.classList.remove("on_hover");
-    });
-    this.next_card.current.addEventListener("mouseout", () => {
-      this.on_ho2.current.classList.remove("on_hover");
-    });
-
+    this.addHoverEffect(this.prev_card, this.on_ho1, "mouseover");
+    this.removeHoverEffect(this.prev_card, this.on_ho1, "mouseout");
+    this.addHoverEffect(this.next_card, this.on_ho2, "mouseover");
+    this.removeHoverEffect(this.next_card, this.on_ho2, "mouseout");
     // project
   }
 
   render() {
     return (
       <div className="container" id="projects">
-        <div className="container" ref={this.simple} id="simple">
+        <div ref={this.simple} id="simple">
           <h3 className="pt-4">Projects</h3>
-          <div className="container">
+          <div>
             <br />
-            <ul style={{ listStyleType: "none" }}>
-              <ProjectItems
-                href="https://yashgandhi.tech/"
-                link="Portfolio in React"
-                par="I create portfolio to showcase my certification, my skills all about me my all project also there. I build website in React, Bootstrap etc.."
-              />
-              <br />
-              <ProjectItems
-                href="http://mescoepune.org/alumni/"
-                link="College Alumni Portal"
-                par="We design and develop website for our college.
-               This for our college alumni. My role in this internship is to design web pages,
-                make and handle database. We mainly use technology like 
-                Vanilla JavaScript ES6+ , HTML, Bootstrap.s"
-              />
-              <br />
-              <ProjectItems
-                href="https://github.com/yashgandhi876/Antakshri_Game_With_Bot"
-                link="Antakshari With Bot"
-                par="I created Antakshari game with bot using Python. In this game player can't win solo. Logic behind this game is to bot remember last letter on song where u loss & throw song which start from that letter only. Human can not remember that much so it is really hard to win. &lt;br /&gt;
-              &lt;br /&gt;
-              Why BOT? &lt;br /&gt;( This is my first intelligent game and you will
-              definitely lose game ; )"
-              />
-              <br />
-              <ProjectItems
-                href="https://yashgandhi876.github.io/Calculator/"
-                link="Calculator using React"
-                par="I create an web application Calculator using React. It is work with full functionality of keyboard."
-              />
-              <br />
-              <ProjectItems
-                href="https://yashgandhi876.github.io/Tic-Tac_Toe/"
-                link="Tic-Tac-Toe Game"
-                par="Tic-Tac-Toe is our favorite game made using HTML,CSS,JS. You can play game right now if you want 😁."
-              />
-              <br />
-              <ProjectItems
-                href="https://github.com/yashgandhi876/Snake-Ladder-Game"
-                link="Snake & Ladder Game"
-                par="I created Snake and Ladder Game in second year for engineering
-              using C. it has no UI, you can play on terminal."
-              />
-              <br />
+            <ul style={{ listStyleType: "none", padding: "0px 5px" }}>
+              {this.projects.map((ele) => (
+                <div>
+                  <ProjectItems
+                    href={ele.link}
+                    link={ele.project_name}
+                    par={ele.description}
+                    key={ele.id}
+                  />
+                  <br />
+                </div>
+              ))}
             </ul>
           </div>
         </div>

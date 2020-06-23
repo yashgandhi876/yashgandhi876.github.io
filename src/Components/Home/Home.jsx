@@ -19,8 +19,8 @@ class Home extends Component {
     };
     return (
       <div className="container mainss">
-        <div className="row mt-5 mr-3 ml-1">
-          <h1>Hey, I'm Yash</h1>
+        <div className="row mt-3 mr-3 ml-1">
+          <h2 className="pt-3">Hi, I'm Yash</h2>
           <img
             src={require("../../assets/Images/lng.png")}
             alt="Me"
@@ -32,9 +32,9 @@ class Home extends Component {
           className="row mt-5 mb-5 mr-3 ml-3"
         >
           <div className="row">
-            <h3>I'm</h3>
+            <h2>I'm</h2>
             &nbsp;
-            <h3>
+            <h2>
               <Typewriter
                 options={{
                   strings: [
@@ -46,28 +46,28 @@ class Home extends Component {
                   loop: true,
                 }}
               />
-            </h3>
+            </h2>
           </div>
         </div>
         <div className="mt-5 ">
           <p>
             I made cool projects and{" "}
             <Link style={style} to="/projects">
-              share with world.
+              shared with the world.
             </Link>{" "}
-            I'll help you with your projects also, drop mail at{" "}
+            I can help you with your projects also, drop a mail at{" "}
             <span style={style}>yashgandhi876@gmail.com</span>
           </p>
           <p>
-            Most of the time, I talk about web development and some cool stuff
-            on my{" "}
+            Most of the time, I talk about web development and some really cool
+            stuff on{" "}
             <a
               style={style}
               target="_blank"
               rel="noopener noreferrer"
               href="https://twitter.com/yashgandhi876"
             >
-              twitter account.
+              twitter.
             </a>
           </p>
           <p>
