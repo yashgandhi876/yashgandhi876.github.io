@@ -19,7 +19,7 @@ class Home extends Component {
     return (
       <div className="container ma">
         <div className="row mt-5 mr-3 ml-1">
-          <h1>Hey, I'm Yash Gandhi</h1>
+          <h1>Hey, I'm Yash</h1>
           <img src={require("../../assets/Images/lng.png")} alt="Me" width="70px" />
         </div>
         <div
