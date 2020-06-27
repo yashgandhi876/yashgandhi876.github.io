@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import file from "../../assets/Resume/resume.pdf";
+import file from "../../assets/Resume/Yash_Gandhi_Resume.pdf";
 import { createRef } from "react";
 class Navbar extends Component {
   constructor(props) {
