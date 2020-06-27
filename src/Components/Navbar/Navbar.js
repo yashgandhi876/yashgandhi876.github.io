@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import file from "../../assets/Resume/Yash_Gandhi_Resume.pdf";
+import resume from "../../assets/Resume/Yash_Gandhi_Resume.pdf";
 import { createRef } from "react";
 class Navbar extends Component {
   constructor(props) {
@@ -100,7 +100,7 @@ class Navbar extends Component {
                   padding: ".5rem 0px",
                   textDecoration: "none",
                 }}
-                href={file}
+                href={resume}
                 download="Yash_Gandhi_Resume.pdf"
                 onClick={this.handleClick}
               >
