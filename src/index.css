@@ -2,7 +2,7 @@ html,
 body {
   margin: 0;
   scroll-behavior: smooth !important;
-  font-family: "Montserrat", "Poppins", sans-serif;
+  font-family:  "Poppins", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   width: 100% !important;

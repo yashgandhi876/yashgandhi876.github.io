@@ -77,12 +77,16 @@ class Projects extends Component {
   ];
 
   checkSize() {
-    if (window.outerWidth >= 768) {
-      this.simple.current.classList.add("d-none");
-      this.classic.current.classList.remove("d-none");
-    } else if (window.outerWidth < 768) {
-      this.classic.current.classList.add("d-none");
-      this.simple.current.classList.remove("d-none");
+    try {
+      if (window.outerWidth >= 768) {
+        this.simple.current.classList.add("d-none");
+        this.classic.current.classList.remove("d-none");
+      } else if (window.outerWidth < 768) {
+        this.classic.current.classList.add("d-none");
+        this.simple.current.classList.remove("d-none");
+      }
+    } catch (e) {
+      console.log(e);
     }
   }
 

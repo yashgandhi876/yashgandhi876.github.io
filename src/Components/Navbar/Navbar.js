@@ -97,9 +97,10 @@ class Navbar extends Component {
                 style={{
                   color: "#fff",
                   display: "block",
-                  padding: ".5rem 0px",
+                  padding: ".5rem 5px",
                   textDecoration: "none",
                 }}
+                id="navitem3"
                 href={resume}
                 download="Yash_Gandhi_Resume.pdf"
                 onClick={this.handleClick}

@@ -39,8 +39,8 @@ class Home extends Component {
                 options={{
                   strings: [
                     " Web Developer",
-                    " Self Learner",
-                    " Front-End Developer",
+                    " Continuous Learner",
+                    " Frontend Developer",
                   ],
                   autoStart: true,
                   loop: true,

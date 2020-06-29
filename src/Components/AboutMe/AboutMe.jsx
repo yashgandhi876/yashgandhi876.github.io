@@ -19,8 +19,8 @@ const AboutMe = () => {
         />
       </div>
       <div className="des">
-        <h1 className="mt-2">Little More...</h1>
-        <hr className="line" />
+        {/* <h1 className="mt-2">Little More...</h1>
+        <hr className="line" /> */}
         <p>
           I'm software engineer from Pune, IN. I was born in 2000 and grew up in
           shrirampur. I started programming for about 3 years ago. After
@@ -60,22 +60,38 @@ const AboutMe = () => {
           .
         </p>
         <div className="skills">
-          <h1 className="mt-5">Skills...</h1>
+          <h1 className="mt-5">Skills</h1>
           <hr className="line" />
-          <h5>Specialties:</h5>
+          <h5>Frontend Technologies</h5>
           <ul>
             <li>JavaScript (ES6+)</li>
-            <li>React</li>
+            <li>HTML5</li>
+            <li>CSS3</li>
+          </ul>
+          <h5>Backend Technologies</h5>
+          <ul>
             <li>Node</li>
             <li>Python</li>
-            <li>HTML</li>
-            <li>CSS</li>
-          </ul>
-          <h5>Familiar:</h5>
-          <ul>
-            <li>C</li>
             <li>C++</li>
-            <li>Java</li>
+          </ul>
+          <h5>Framework and Library </h5>
+          <ul>
+            <li>React</li>
+            <li>Express</li>
+            <li>Bootstrap</li>
+          </ul>
+          <h5>DataBase</h5>
+          <ul>
+            <li>MySQL</li>
+            <li>MongoDB</li>
+          </ul>
+          <h5>Tools and Enviorment</h5>
+          <ul>
+            <li>Git and Github</li>
+            <li>Postman</li>
+            <li>OS:Ubuntu</li>
+            <li>VS Code</li>
+            <li>OSS Contribution (Hacktoberfest)</li>
           </ul>
         </div>
       </div>
