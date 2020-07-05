@@ -6,6 +6,7 @@ import Symbols from './Symbols/Symbols';
 import Navbar from './Navbar/Navbar';
 import Uparrow from './Uparrow/Uparrow';
 import Home from './Home/Home';
+import Spinner from './Spinner/Spinner';
 
 const Projects = React.lazy(() => import('./Projects/Projects'));
 const AboutMe = React.lazy(() => import('./AboutMe/AboutMe'));
@@ -23,7 +24,7 @@ class App extends Component {
 						<Route
 							path="/projects"
 							render={() => (
-								<Suspense fallback="Loading....">
+								<Suspense fallback={<Spinner />}>
 									<Projects />
 								</Suspense>
 							)}
@@ -31,7 +32,7 @@ class App extends Component {
 						<Route
 							path="/aboutme"
 							render={() => (
-								<Suspense fallback="Loading....">
+								<Suspense fallback={<Spinner />}>
 									<AboutMe />
 								</Suspense>
 							)}
@@ -41,7 +42,7 @@ class App extends Component {
 							path="/blogs"
 							exact
 							render={() => (
-								<Suspense fallback="Loading....">
+								<Suspense fallback={<Spinner />}>
 									<Blogs />
 								</Suspense>
 							)}
@@ -50,7 +51,7 @@ class App extends Component {
 						<Route
 							path="/"
 							render={() => (
-								<Suspense fallback="Loading....">
+								<Suspense fallback={<Spinner />}>
 									<NotFound />
 								</Suspense>
 							)}
