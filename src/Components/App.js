@@ -7,6 +7,7 @@ import Navbar from './Navbar/Navbar';
 import Uparrow from './Uparrow/Uparrow';
 import Home from './Home/Home';
 import Spinner from './Spinner/Spinner';
+import { createRef } from 'react';
 
 const Projects = React.lazy(() => import('./Projects/Projects'));
 const AboutMe = React.lazy(() => import('./AboutMe/AboutMe'));
@@ -14,10 +15,23 @@ const Blogs = React.lazy(() => import('./Blogs/Blogs'));
 const NotFound = React.lazy(() => import('./Notfound/NotFound'));
 
 class App extends Component {
+	state = {
+		spinnerref: createRef()
+	};
+	componentDidMount() {
+		this.state.spinnerref.current.classList.add('hidespinner');
+	}
+
 	render() {
+		const spin = (
+			<div ref={this.state.spinnerref} className="loadingclass">
+				<Spinner />
+			</div>
+		);
 		return (
 			<Router>
 				<div className="main">
+					{spin}
 					<Navbar />
 					<Uparrow />
 					<Switch>

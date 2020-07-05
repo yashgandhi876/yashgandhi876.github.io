@@ -1,41 +1,57 @@
 body {
-  color: #fff !important;
-  overflow-x: hidden;
-  background-image: url(../assets/Images/dessd.jpg);
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+	color: #fff !important;
+	overflow-x: hidden;
+	background-image: url(../assets/Images/dessd.jpg);
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .main {
-  background-color: rgba(10, 8, 8, 0.884);
-  min-height: 100vh;
-  height: 100%;
+	background-color: rgba(10, 8, 8, 0.884);
+	min-height: 100vh;
+	height: 100%;
 }
 
 .after {
-  transition: all 0.8s ease-in-out;
-  background-color: #f2f3f4 !important;
-  color: #2d2d2f !important;
+	transition: all 0.8s ease-in-out;
+	background-color: #f2f3f4 !important;
+	color: #2d2d2f !important;
+}
+
+.loadingclass {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: #2d2d2f;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 500;
+	transition: all 5s ease-in-out;
+}
+
+.hidespinner {
+	transform: translateY(-100%);
 }
 
 .underline {
-  background-color: grey;
-  opacity: 0.5;
+	background-color: grey;
+	opacity: 0.5;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+	.App-logo {
+		animation: App-logo-spin infinite 20s linear;
+	}
 }
 
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
 }
