@@ -19,7 +19,24 @@ class App extends Component {
 		spinnerref: createRef()
 	};
 	componentDidMount() {
-		this.state.spinnerref.current.classList.add('hidespinner');
+		const spinshow = () => {
+			return new Promise((resolve, reject) => {
+				setTimeout(() => {
+					if (this.state.spinnerref) {
+						this.state.spinnerref.current.classList.add('hidespinner');
+					}
+				}, 1000);
+				resolve(1);
+			});
+		};
+		const run = async () => {
+			try {
+				await spinshow();
+			} catch (e) {
+				console.log(e);
+			}
+		};
+		run();
 	}
 
 	render() {
