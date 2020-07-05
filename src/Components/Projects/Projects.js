@@ -189,7 +189,7 @@ class Projects extends Component {
     return (
       <div className="container" id="projects">
         <div ref={this.simple} id="simple">
-          <h3 className="pt-4">Projects</h3>
+          
           <div>
             <br />
             <ul style={{ listStyleType: "none", padding: "0px 5px" }}>
@@ -208,8 +208,8 @@ class Projects extends Component {
           </div>
         </div>
         <div className="container" ref={this.classic} id="classic">
-          <h3 className="pt-4">Projects</h3>
-          <div className="row startPro container">
+                
+          <div className="mt-5 row startPro container">
             {/* <!-- prev --> */}
             <div
               id="prev_card_virtual"

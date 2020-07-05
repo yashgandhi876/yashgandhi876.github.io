@@ -1,0 +1,19 @@
+.Post {
+	width: 60%;
+	margin: 10px auto;
+	padding-bottom: 90px;
+}
+
+.code {
+	border-radius: 5px;
+}
+
+.img {
+	margin: 30px auto;
+}
+
+@media (max-width: 774px) {
+	.Post {
+		width: 95%;
+	}
+}

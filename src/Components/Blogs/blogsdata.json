@@ -1,0 +1,10 @@
+[
+	{
+		"blog_id": 1,
+		"name": "Async & Await in JavaScript",
+		"date": "Feb 23, 2020",
+		"img": "async_await.jpeg",
+		"author": "Yash Gandhi",
+		"description": "Get started with asyc and await in javascript, so you get result of promice with clean and neet code "
+	}
+]
