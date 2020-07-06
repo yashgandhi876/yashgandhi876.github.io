@@ -25,7 +25,7 @@ class App extends Component {
 					if (this.state.spinnerref) {
 						this.state.spinnerref.current.classList.add('hidespinner');
 					}
-				}, 1000);
+				}, 500);
 				resolve(1);
 			});
 		};

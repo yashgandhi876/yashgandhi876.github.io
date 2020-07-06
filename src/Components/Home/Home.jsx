@@ -44,17 +44,17 @@ class Home extends Component {
 				<div className="mt-5 ">
 					<p>I'm full stack javascript developer from India.</p>
 					<p>
-						I made some cool projects and{' '}
+						I made some cool projects and shared with the world on{' '}
 						<a
 							style={style}
 							target="_blank"
 							rel="noopener noreferrer"
 							href="https://github.com/yashgandhi876"
 						>
-							shared with the world on github.
+							github.
 						</a>{' '}
 						I can help you with your projects also, drop a mail at{' '}
-						<span style={style}>yashgandhi876@gmail.com</span>
+						yashgandhi876@gmail.com
 					</p>
 					<p>
 						Most of the time, I talk about web development and some other cool stuff on{' '}
@@ -64,13 +64,13 @@ class Home extends Component {
 							rel="noopener noreferrer"
 							href="https://twitter.com/yashgandhi876"
 						>
-							twitter, do check out here.
+							twitter.
 						</a>
 					</p>
 					<p>
 						You can read more{' '}
 						<Link style={style} to="/aboutme">
-							about me here.
+							about me.
 						</Link>
 					</p>
 					<p>

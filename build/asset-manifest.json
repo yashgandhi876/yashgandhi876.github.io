@@ -1,10 +1,10 @@
 {
   "files": {
     "main.css": "/static/css/main.7e56997a.chunk.css",
-    "main.js": "/static/js/main.db57caaf.chunk.js",
-    "main.js.map": "/static/js/main.db57caaf.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.40082f21.js",
-    "runtime-main.js.map": "/static/js/runtime-main.40082f21.js.map",
+    "main.js": "/static/js/main.6bd7ac28.chunk.js",
+    "main.js.map": "/static/js/main.6bd7ac28.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.e1e351b3.js",
+    "runtime-main.js.map": "/static/js/runtime-main.e1e351b3.js.map",
     "static/js/2.7b6b228b.chunk.js": "/static/js/2.7b6b228b.chunk.js",
     "static/js/2.7b6b228b.chunk.js.map": "/static/js/2.7b6b228b.chunk.js.map",
     "static/css/3.e599c21b.chunk.css": "/static/css/3.e599c21b.chunk.css",
@@ -14,12 +14,12 @@
     "static/js/4.a8181e80.chunk.js": "/static/js/4.a8181e80.chunk.js",
     "static/js/4.a8181e80.chunk.js.map": "/static/js/4.a8181e80.chunk.js.map",
     "static/css/5.1bcff3db.chunk.css": "/static/css/5.1bcff3db.chunk.css",
-    "static/js/5.7d2d04e9.chunk.js": "/static/js/5.7d2d04e9.chunk.js",
-    "static/js/5.7d2d04e9.chunk.js.map": "/static/js/5.7d2d04e9.chunk.js.map",
+    "static/js/5.7bc0520f.chunk.js": "/static/js/5.7bc0520f.chunk.js",
+    "static/js/5.7bc0520f.chunk.js.map": "/static/js/5.7bc0520f.chunk.js.map",
     "static/js/6.4d444188.chunk.js": "/static/js/6.4d444188.chunk.js",
     "static/js/6.4d444188.chunk.js.map": "/static/js/6.4d444188.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.702129d124416b077f9b5058ff0aff46.js": "/precache-manifest.702129d124416b077f9b5058ff0aff46.js",
+    "precache-manifest.fd427c07d4516e84869b7e371273a36d.js": "/precache-manifest.fd427c07d4516e84869b7e371273a36d.js",
     "service-worker.js": "/service-worker.js",
     "static/css/3.e599c21b.chunk.css.map": "/static/css/3.e599c21b.chunk.css.map",
     "static/css/4.06ce1563.chunk.css.map": "/static/css/4.06ce1563.chunk.css.map",
@@ -39,9 +39,9 @@
     "static/media/tic_tac_toe.jpg": "/static/media/tic_tac_toe.4086e6b7.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.40082f21.js",
+    "static/js/runtime-main.e1e351b3.js",
     "static/js/2.7b6b228b.chunk.js",
     "static/css/main.7e56997a.chunk.css",
-    "static/js/main.db57caaf.chunk.js"
+    "static/js/main.6bd7ac28.chunk.js"
   ]
 }
