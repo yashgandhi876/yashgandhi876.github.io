@@ -65,7 +65,7 @@ const Post = (props) => {
 			</div>
 			<div className="description">
 				<p style={{ textAlign: 'justify' }}>
-					If you are JavaScript developer then you definitely heard about this term and if not so don't worry,
+					If you are JavaScript developer then you definitely heard about this term and if not don't worry,
 					I'm here to explain how it works and when to use it.
 				</p>
 				<h3>Promise</h3>
@@ -101,7 +101,7 @@ const Post = (props) => {
 					{' '}
 					Await keyword works only in asynchronous function so I make main function as asynchronous. Now We
 					have to put await keyword in front of run function call which returns promise. Due to await keyword
-					thread will wait there untill it get either resolved or rejected.
+					thread will wait there untill it get either resolve or rejecte.
 				</p>
 			</div>
 		</div>
