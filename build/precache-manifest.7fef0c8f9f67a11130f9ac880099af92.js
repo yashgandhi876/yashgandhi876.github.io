@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "50dacfffee1c2844dd3b3ca4d782aa61",
+    "revision": "c63be6a228b7aa779d9be2ac2350b602",
     "url": "/index.html"
   },
   {
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/css/5.1bcff3db.chunk.css"
   },
   {
-    "revision": "07acf8ee1d3ab8ab9b3c",
+    "revision": "ab38ace52d25fc0b432a",
     "url": "/static/css/main.15eca224.chunk.css"
   },
   {
@@ -44,8 +44,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/6.4d444188.chunk.js"
   },
   {
-    "revision": "07acf8ee1d3ab8ab9b3c",
-    "url": "/static/js/main.4cccea07.chunk.js"
+    "revision": "ab38ace52d25fc0b432a",
+    "url": "/static/js/main.59e6d6c1.chunk.js"
   },
   {
     "revision": "d3ef1f35797964ef5fd2",
@@ -56,8 +56,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/Cal.ba5e1412.jpg"
   },
   {
-    "revision": "efd7f3eedeaa601ca2c534ac4a4398e1",
-    "url": "/static/media/Yash_Gandhi_Resume.efd7f3ee.pdf"
+    "revision": "c1dc3f4d3e0d5617eca3956ba57973e6",
+    "url": "/static/media/Yash_Gandhi_Resume.c1dc3f4d.pdf"
   },
   {
     "revision": "69d9ec80a92b376c455baf1fbcaa5825",
