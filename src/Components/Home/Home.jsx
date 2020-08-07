@@ -41,7 +41,7 @@ class Home extends Component {
               <Typewriter
                 options={{
                   strings: [
-                    " A Student",
+                    " a Student",
                     " Web Developer",
                     " Continuous Learner",
                     " Frontend Developer",

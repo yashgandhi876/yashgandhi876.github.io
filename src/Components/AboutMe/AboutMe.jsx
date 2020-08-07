@@ -21,11 +21,11 @@ const AboutMe = () => {
       <div className="des">
         {/* <h1 className="mt-2">Little More...</h1>
         <hr className="line" /> */}
-        <p>
-          I'm software engineer from Pune, IN. I was born in 2000 and grew up in
+        <p style={{ textJustify: "auto" }}>
+          I'm Web Developer from Pune, IN. I was born in 2000 and grew up in
           shrirampur. I started programming for about 3 years ago. After
-          graduating from high school I started pursuing Bachelor of Engineering
-          degree in Computer Science from{" "}
+          graduating from high school, I started pursuing Bachelor of
+          Engineering degree in Computer Science from{" "}
           <a
             href="http://mescoepune.org"
             target="_blank"
@@ -36,28 +36,28 @@ const AboutMe = () => {
           .
         </p>
         <p>
-          I made <a href="/projects">Projects</a> using HTML, CSS, JavaScript
-          and pushed on{" "}
+          I crafted some cool <a href="/projects">projects</a> using HTML, CSS,
+          JavaScript, ReactJS and pushed on{" "}
           <a
             href="https://github.com/yashgandhi876"
             target="_blank"
             rel="noopener noreferrer"
           >
-            GitHub
+            github
           </a>
-          . Right now, my focus on learning React.js, Node, Express.
+          . Right now, my focus on learning NodeJS, ExpressJS.
         </p>
         <p>
-          I started making videos based on projects, tips & tricks, JavaScript
-          and posted on{" "}
+          I made videos based on projects, tips & tricks, JavaScript, all about
+          web and uploaded on{" "}
           <a
             href="https://www.youtube.com/channel/UCyB_tsmZLM0nK2yTYF2ZaaA/videos"
             target="_blank"
             rel="noopener noreferrer"
           >
-            YouTube
+            youtube
           </a>
-          .
+          . That's make my weekend very much interesting
         </p>
         <div className="skills">
           <h1 className="mt-5">Skills</h1>
@@ -70,14 +70,14 @@ const AboutMe = () => {
           </ul>
           <h5>Backend Technologies</h5>
           <ul>
-            <li>Node</li>
+            <li>NodeJS</li>
             <li>Python</li>
             <li>C++</li>
           </ul>
           <h5>Framework and Library </h5>
           <ul>
-            <li>React</li>
-            <li>Express</li>
+            <li>ReactJS</li>
+            <li>ExpressJS</li>
             <li>Bootstrap</li>
           </ul>
           <h5>DataBase</h5>
@@ -91,7 +91,7 @@ const AboutMe = () => {
             <li>Postman</li>
             <li>OS:Ubuntu</li>
             <li>VS Code</li>
-            <li>OSS Contribution (Hacktoberfest)</li>
+            <li>OSS Contribution (Hacktoberfest 2019)</li>
           </ul>
         </div>
       </div>
