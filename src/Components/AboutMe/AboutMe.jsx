@@ -74,7 +74,7 @@ const AboutMe = () => {
             <li>Python</li>
             <li>C++</li>
           </ul>
-          <h5>Framework and Library </h5>
+          <h5>Framework and Library</h5>
           <ul>
             <li>ReactJS</li>
             <li>ExpressJS</li>
