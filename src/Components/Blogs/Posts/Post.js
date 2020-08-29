@@ -7,27 +7,27 @@ const Post = (props) => {
 	let img = 'async_await.jpeg';
 	let codeString = [
 		`
-		function run() {	
-			return new Promise((resolve, reject) => {	
-				setTimeout(() => {	
-					resolve(99);	
-					console.log('Done');	
-				}, 2000);	
-			});	
-		}	
+		function run() {
+			return new Promise((resolve, reject) => {
+				setTimeout(() => {
+					resolve(99);
+					console.log('Done');
+				}, 2000);
+			});
+		}
 
-		console.log('start');	
-		run().then((result) => {	
-			console.log(result);	
-			console.log('end');	
+		console.log('start');
+		run().then((result) => {
+			console.log(result);
+			console.log('end');
 		});
 
-		/*  Output:	
-				start	
-				Done (after 2 sec)	
-				99	
-				end	
-		*/	
+		/*  Output:
+				start
+				Done (after 2 sec)
+				99
+				end
+		*/
 
 	`,
 		`
@@ -49,11 +49,11 @@ const Post = (props) => {
 
 		main();
 
-		/*  Output:	
-				start	
-				Done (after 2 sec)	
-				99	
-				end	
+		/*  Output:
+				start
+				Done (after 2 sec)
+				99
+				end
 		*/
 
 `
@@ -68,7 +68,7 @@ const Post = (props) => {
 					If you are JavaScript developer then you definitely heard about this term and if not don't worry,
 					I'm here to explain how it works and when to use it.
 				</p>
-				<h3>Promise</h3>
+				<h3>Promises</h3>
 				<p>
 					We all know JavaScript is synchronous & single-threaded. But promises allow JS to execute that code
 					in asynchronous way. Rather than returning direct result it returns promise.
@@ -101,7 +101,7 @@ const Post = (props) => {
 					{' '}
 					Await keyword works only in asynchronous function so I make main function as asynchronous. Now We
 					have to put await keyword in front of run function call which returns promise. Due to await keyword
-					thread will wait there untill it get either resolve or rejecte.
+					thread will wait there untill it get either resolve or reject.
 				</p>
 			</div>
 		</div>
