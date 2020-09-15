@@ -54,9 +54,9 @@ class Home extends Component {
           </div>
         </div>
         <div className="mt-5 ">
-          <p>I'm full stack javascript developer from India.</p>
+          <p>I am a full stack javascript developer from India.</p>
           <p>
-            I made some cool projects and shared with the world on{" "}
+            I have developed some cool projects and have hosted them on {" "}
             <a
               style={style}
               target="_blank"
@@ -65,7 +65,7 @@ class Home extends Component {
             >
               github.
             </a>{" "}
-            I can help you with your projects also, drop a mail at{" "}
+            I can help you with your projects, drop a mail at{" "}
             yashgandhi876@gmail.com
           </p>
           <p>

@@ -22,8 +22,8 @@ const AboutMe = () => {
         {/* <h1 className="mt-2">Little More...</h1>
         <hr className="line" /> */}
         <p style={{ textJustify: "auto" }}>
-          I'm Web Developer from Pune, IN. I was born in 2000 and grew up in
-          shrirampur. I started programming for about 3 years ago. After
+          I'm Web Developer from Pune, India. I was born in 2000 and grew up in
+          shrirampur. I started programming 3 years ago. After
           graduating from high school, I started pursuing Bachelor of
           Engineering degree in Computer Science from{" "}
           <a
@@ -45,11 +45,11 @@ const AboutMe = () => {
           >
             github
           </a>
-          . Right now, my focus on learning NodeJS, ExpressJS.
+          . Presently,I am focused on learning NodeJS, ExpressJS.
         </p>
         <p>
           I made videos based on projects, tips & tricks, JavaScript, all about
-          web and uploaded on{" "}
+          web and I have them uploaded on{" "}
           <a
             href="https://www.youtube.com/channel/UCyB_tsmZLM0nK2yTYF2ZaaA/videos"
             target="_blank"
@@ -57,7 +57,7 @@ const AboutMe = () => {
           >
             youtube
           </a>
-          . That's make my weekend very much interesting
+          . That makes my weekend very much interesting
         </p>
         <div className="skills">
           <h1 className="mt-5">Skills</h1>
