@@ -2,7 +2,7 @@
   "name": "yashgandhi",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://yashgandhi.tech",
+  "homepage": "http://yashgandhi876.github.io/",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
@@ -47,12 +47,12 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yashgandhi2020/yashgandhi.tech.git"
+    "url": "git+https://github.com/yashgandhi876/yashgandhi876.github.io.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/yashgandhi2020/yashgandhi.tech/issues"
+    "url": "https://github.com/yashgandhi876/issues"
   }
 }
