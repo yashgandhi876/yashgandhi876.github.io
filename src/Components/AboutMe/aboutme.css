@@ -1,9 +1,14 @@
+*{
+  text-align: justify;
+}
+
 .mainsss {
   width: 80% !important;
   margin-bottom: 50px;
   margin-top: 10px;
   padding: 0px;
   padding-bottom: 90px !important;
+
 }
 
 .namep {
@@ -34,4 +39,19 @@ p {
     height: 600px;
     object-fit: contain;
   }
+}
+
+
+.firstBox{
+  display: flex;
+  width: 100%;
+
+}
+
+.firstPart{
+  width: 50%;
+}
+
+.secondPart{
+  width: 50%;
 }
