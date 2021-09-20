@@ -8,23 +8,26 @@ const AboutMe = () => {
       <div className="firstBox">
 
         <div class="firstPart">
-          <p style={{ textJustify: "auto" }}>
-            I'm Web Developer from Pune, India. I was born in 2000 and grew up in
-            shrirampur. I started programming 3 years ago. After
-            graduating from high school, I started pursuing Bachelor of
-            Engineering degree in Computer Science from{" "}
-            <a
+          <p>
+            Heyyy, how's going buddy?
+          </p>
+          <p>
+            I am Yash Gandhi from India. I am Web Developer, frontend developer, backend developer, full stack developer, and last but not least full snack developer as well <span> 🤤😂</span>.
+            I completed my Bachelor's of Engineering from <a
               href="http://mescoepune.org"
               target="_blank"
               rel="noopener noreferrer"
             >
               MESCOE
             </a>
-            .
+            , Pune. Along with degree I participated in hackthons, coding challenges,
+            and yes we also won one hackthon from Airbus i.e. Airbus Aerothon 3.0 <span>🥳🥳</span>
+            . Then I also participated in Global Coding Challenge by Credit Suisse in 2020
+            and secured 616th rank in the world out of 18,000 participants.
+
           </p>
           <p>
-            I crafted some cool <a href="/projects">projects</a> using HTML, CSS,
-            JavaScript, ReactJS and pushed on{" "}
+            I crafted some cool <a href="/projects">projects</a> and pushed on{" "}
             <a
               href="https://github.com/yashgandhi876"
               target="_blank"
@@ -32,11 +35,8 @@ const AboutMe = () => {
             >
               github
             </a>
-            . Presently,I am focused on learning NodeJS, ExpressJS.
-          </p>
-          <p>
-            I made videos based on projects, tips & tricks, JavaScript, all about
-            web and I have them uploaded on{" "}
+            .  I used to make videos based on projects, tips & tricks, JavaScript, all about
+            web and I have uploaded them  on{" "}
             <a
               href="https://www.youtube.com/channel/UCyB_tsmZLM0nK2yTYF2ZaaA/videos"
               target="_blank"
@@ -44,7 +44,15 @@ const AboutMe = () => {
             >
               youtube
             </a>
-            . That makes my weekend very much interesting
+            . That makes my weekend very much interesting.
+          </p>
+
+          <p>
+            My skillset are JavaScript, ReactJS, Java, Python, MySQL, HTML, CSS, C, C++, etc. I am good at googling 😛
+          </p>
+
+          <p>
+            Want to connect with me? Just dm me on twitter, linkedin, instagram anywhere @yashgandhi876 ( not facebook you will never get reply from me on fb 😂 It's just birthday reminder for me ). Or you can mail me on yashgandhi876@gmail.com
           </p>
         </div>
 
@@ -54,46 +62,6 @@ const AboutMe = () => {
             alt="yash gandhi"
             width="100%"
           />
-        </div>
-      </div>
-
-      <div className="des">
-
-
-        <div className="skills">
-          <h1 className="mt-5">Skills</h1>
-          <hr className="line" />
-          <h5>Frontend Technologies</h5>
-          <ul>
-            <li>JavaScript (ES6+)</li>
-            <li>HTML5</li>
-            <li>CSS3</li>
-          </ul>
-          <h5>Backend Technologies</h5>
-          <ul>
-            <li>NodeJS</li>
-            <li>Python</li>
-            <li>C++</li>
-          </ul>
-          <h5>Framework and Library</h5>
-          <ul>
-            <li>ReactJS</li>
-            <li>ExpressJS</li>
-            <li>Bootstrap</li>
-          </ul>
-          <h5>DataBase</h5>
-          <ul>
-            <li>MySQL</li>
-            <li>MongoDB</li>
-          </ul>
-          <h5>Tools and Enviorment</h5>
-          <ul>
-            <li>Git and Github</li>
-            <li>Postman</li>
-            <li>OS:Ubuntu</li>
-            <li>VS Code</li>
-            <li>OSS Contribution (Hacktoberfest 2019)</li>
-          </ul>
         </div>
       </div>
     </div>
