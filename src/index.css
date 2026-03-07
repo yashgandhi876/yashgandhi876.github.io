@@ -1,29 +1,118 @@
-html,
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Cinzel+Decorative:wght@400;700&family=IM+Fell+English:ital@0;1&family=Lato:wght@300;400;700&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --hp-gold:        #c9a227;
+  --hp-gold-light:  #f0d060;
+  --hp-dark:        #0d0a1a;
+  --hp-maroon:      #740001;
+  --hp-crimson:     #ae0001;
+  --hp-parchment:   #f5e6c8;
+  --hp-cream:       #ede0c4;
+  --hp-purple:      #1a0a2e;
+  --hp-navy:        #0f1b35;
+  --hp-muted:       #a89060;
+  --font-heading:   'Cinzel Decorative', serif;
+  --font-title:     'Cinzel', serif;
+  --font-body:      'IM Fell English', serif;
+  --font-sans:      'Lato', sans-serif;
+}
+
+html { scroll-behavior: smooth; }
+
 body {
-  margin: 0;
-  scroll-behavior: smooth !important;
-  font-family:  "Poppins", sans-serif;
+  background-color: var(--hp-dark);
+  color: var(--hp-parchment);
+  font-family: var(--font-body);
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  width: 100% !important;
-  height: 100% !important;
-  font-size: 20px;
+  overflow-x: hidden;
+  width: 100%;
+  font-size: 18px;
 }
 
-code {
-  font-family: "Montserrat", source-code-pro, Menlo, Monaco, Consolas,
-    "Courier New", monospace;
+code { font-family: 'Courier New', monospace; }
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--hp-dark); }
+::-webkit-scrollbar-thumb { background: var(--hp-gold); border-radius: 3px; }
+
+/* ── Keyframes ── */
+@keyframes twinkle {
+  0%, 100% { opacity: 0.2; transform: scale(0.8); }
+  50%       { opacity: 1;   transform: scale(1.2); }
+}
+@keyframes float {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  33%       { transform: translateY(-14px) rotate(2deg); }
+  66%       { transform: translateY(-7px) rotate(-2deg); }
+}
+@keyframes glow-pulse {
+  0%, 100% { text-shadow: 0 0 10px var(--hp-gold), 0 0 20px var(--hp-gold); }
+  50%       { text-shadow: 0 0 22px var(--hp-gold-light), 0 0 44px var(--hp-gold-light), 0 0 66px var(--hp-gold); }
+}
+@keyframes shimmer {
+  0%   { background-position: -200% center; }
+  100% { background-position:  200% center; }
+}
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(32px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes particleDrift {
+  0%   { transform: translateY(0) rotate(0deg); opacity: 0; }
+  10%  { opacity: 0.8; }
+  90%  { opacity: 0.8; }
+  100% { transform: translateY(-100px) rotate(360deg); opacity: 0; }
+}
+@keyframes borderGlow {
+  0%, 100% { box-shadow: 0 0 6px rgba(201,162,39,0.3); }
+  50%       { box-shadow: 0 0 18px rgba(201,162,39,0.6), 0 0 30px rgba(201,162,39,0.3); }
 }
 
-body::-webkit-scrollbar {
-  width: 15px;
+/* ── Utility ── */
+.gold-shimmer {
+  background: linear-gradient(90deg, var(--hp-gold) 0%, var(--hp-gold-light) 40%, #fff8dc 50%, var(--hp-gold-light) 60%, var(--hp-gold) 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: shimmer 4s linear infinite;
+}
+.chapter-label {
+  font-family: var(--font-title);
+  font-size: 0.65rem;
+  letter-spacing: 0.35em;
+  color: var(--hp-gold);
+  text-transform: uppercase;
+  opacity: 0.75;
+  display: block;
+  margin-bottom: 8px;
+}
+.ornament {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  justify-content: center;
+  color: var(--hp-gold);
+  opacity: 0.45;
+  font-size: 1rem;
+}
+.ornament::before, .ornament::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  max-width: 180px;
+  background: linear-gradient(to right, transparent, var(--hp-gold));
+}
+.ornament::after { background: linear-gradient(to left, transparent, var(--hp-gold)); }
+
+.parchment-card {
+  background: linear-gradient(135deg, rgba(245,230,200,0.05) 0%, rgba(201,162,39,0.03) 100%);
+  border: 1px solid rgba(201,162,39,0.18);
+  border-radius: 4px;
 }
 
-body::-webkit-scrollbar-track {
-  box-shadow: none;
-}
-
-body::-webkit-scrollbar-thumb {
-  background-color: #ffae42;
-  border-radius: 10px;
-}
+.reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.7s ease, transform 0.7s ease; }
+.reveal.visible { opacity: 1; transform: translateY(0); }

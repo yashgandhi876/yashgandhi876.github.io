@@ -1,58 +1,147 @@
+/* ══════════════════════════════════════════
+   App — Harry Potter Portfolio Theme
+══════════════════════════════════════════ */
+
 body {
-	color: #fff !important;
-	overflow-x: hidden;
-	background-image: url(../assets/Images/dessd.jpg);
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
+  color: var(--hp-parchment) !important;
+  overflow-x: hidden;
+  background-color: var(--hp-dark);
 }
 
 .main {
-	background-color: rgba(10, 8, 8, 0.884);
-	min-height: 100vh;
-	height: 100%;
+  background-color: var(--hp-dark);
+  min-height: 100vh;
+  position: relative;
 }
 
-.after {
-	transition: all 0.8s ease-in-out;
-	background-color: #f2f3f4 !important;
-	color: #2d2d2f !important;
-}
-
+/* Spinner / loading overlay */
 .loadingclass {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	background-color: #2d2d2f;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	z-index: 500;
-	transition: all 5s ease-in-out;
+  position: fixed;
+  inset: 0;
+  background: var(--hp-dark);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 9000;
 }
-
 .hidespinner {
-	transform: translateY(-100%);
-	transition: all 1.5s ease-in-out;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-100%);
+  transition: all 1.5s ease-in-out;
 }
 
-.underline {
-	background-color: grey;
-	opacity: 0.5;
+/* Buttons */
+.hp-btn {
+  font-family: var(--font-title);
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  padding: 12px 28px;
+  border: 1px solid var(--hp-gold);
+  color: var(--hp-gold);
+  background: transparent;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+.hp-btn::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--hp-gold);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+  z-index: -1;
+}
+.hp-btn:hover { color: var(--hp-dark); text-decoration: none; }
+.hp-btn:hover::before { transform: scaleX(1); }
+.hp-btn-solid {
+  background: var(--hp-gold);
+  color: var(--hp-dark) !important;
+  font-weight: 700;
+}
+.hp-btn-solid:hover { background: var(--hp-gold-light); }
+
+/* Section heading */
+.section-heading {
+  font-family: var(--font-heading);
+  font-size: clamp(1.5rem, 4vw, 2.3rem);
+  color: var(--hp-gold);
+  text-align: center;
+  margin-bottom: 8px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-	.App-logo {
-		animation: App-logo-spin infinite 20s linear;
-	}
+/* Timeline */
+.timeline { position: relative; padding-left: 32px; }
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 8px; top: 0; bottom: 0;
+  width: 1px;
+  background: linear-gradient(to bottom, transparent, var(--hp-gold) 30%, var(--hp-gold) 70%, transparent);
+}
+.timeline-item { position: relative; margin-bottom: 40px; }
+.timeline-item::before {
+  content: '✦';
+  position: absolute;
+  left: -28px; top: 4px;
+  color: var(--hp-gold);
+  font-size: 0.7rem;
 }
 
-@keyframes App-logo-spin {
-	from {
-		transform: rotate(0deg);
-	}
-	to {
-		transform: rotate(360deg);
-	}
+/* Skill badges */
+.skill-badge {
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  padding: 5px 12px;
+  border: 1px solid rgba(201,162,39,0.35);
+  border-radius: 2px;
+  color: var(--hp-cream);
+  background: rgba(201,162,39,0.06);
+  display: inline-block;
+  transition: all 0.25s ease;
+  margin: 4px;
+}
+.skill-badge:hover {
+  border-color: var(--hp-gold);
+  background: rgba(201,162,39,0.15);
+  color: var(--hp-gold);
+}
+
+/* Project card */
+.project-card {
+  background: linear-gradient(160deg, rgba(26,10,46,0.9) 0%, rgba(15,27,53,0.9) 100%);
+  border: 1px solid rgba(201,162,39,0.2);
+  border-radius: 6px;
+  padding: 28px 24px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  height: 100%;
+}
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(0,0,0,0.4), 0 0 20px rgba(201,162,39,0.1);
+  border-color: rgba(201,162,39,0.5);
+}
+
+/* Container */
+.hp-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 28px;
+}
+
+/* Section padding */
+.hp-section {
+  padding: 96px 0;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .hp-section { padding: 64px 0; }
+  .hp-container { padding: 0 18px; }
 }
