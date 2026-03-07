@@ -93,14 +93,20 @@
 .hp-nav__drawer {
   display: none;
   flex-direction: column;
-  padding: 16px 28px 24px;
+  padding: 0 28px;
   background: rgba(13, 10, 26, 0.98);
   border-top: 1px solid rgba(201, 162, 39, 0.15);
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.4s ease;
+  visibility: hidden;
+  transition: max-height 0.4s ease, padding 0.4s ease, visibility 0s 0.4s;
 }
-.hp-nav__drawer.is-open { max-height: 400px; }
+.hp-nav__drawer.is-open {
+  max-height: 420px;
+  padding: 16px 28px 24px;
+  visibility: visible;
+  transition: max-height 0.4s ease, padding 0.4s ease, visibility 0s;
+}
 .hp-nav__drawer-link {
   background: none;
   border: none;
