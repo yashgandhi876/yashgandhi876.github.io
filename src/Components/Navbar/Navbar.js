@@ -11,10 +11,18 @@ class Navbar extends Component {
 
   componentDidMount() {
     window.addEventListener('scroll', this.handleScroll);
+    document.addEventListener('click', this.handleOutsideClick);
   }
   componentWillUnmount() {
     window.removeEventListener('scroll', this.handleScroll);
+    document.removeEventListener('click', this.handleOutsideClick);
   }
+
+  handleOutsideClick = (e) => {
+    if (this.state.open && this.navRef.current && !this.navRef.current.contains(e.target)) {
+      this.close();
+    }
+  };
 
   handleScroll = () => {
     this.setState({ scrolled: window.scrollY > 60 });
@@ -91,6 +99,15 @@ class Navbar extends Component {
               {item.label}
             </button>
           ))}
+          <a
+            href="https://github.com/yashgandhi876/yashgandhi876.github.io/raw/master/YashGandhiResume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hp-nav__drawer-link hp-nav__drawer-resume"
+            onClick={this.close}
+          >
+            📜 Résumé
+          </a>
         </div>
       </nav>
     );

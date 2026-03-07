@@ -338,18 +338,15 @@ class Home extends Component {
       this._totalDelta = 1200;
       this._wheelAccum = 0;
 
-      this._onWheel = (e) => {
-        if (!this._letterEl) return;
+      const handleDelta = (e, deltaY) => {
         const rect = this._letterEl.getBoundingClientRect();
         const vh   = window.innerHeight;
 
-        // Engage going DOWN: letter entering from bottom, not yet open
-        const engageDown = !this._locked && e.deltaY > 0
+        const engageDown = !this._locked && deltaY > 0
           && rect.top <= vh * 0.6 && rect.top > -100
           && this.state.letterProgress < 1;
 
-        // Engage going UP: letter coming back into view, partially/fully open
-        const engageUp = !this._locked && e.deltaY < 0
+        const engageUp = !this._locked && deltaY < 0
           && rect.top >= -this._letterEl.offsetHeight * 0.5 && rect.top < vh * 0.7
           && this.state.letterProgress > 0;
 
@@ -360,21 +357,37 @@ class Home extends Component {
 
         if (this._locked) {
           e.preventDefault();
-          this._wheelAccum = Math.max(0, Math.min(this._totalDelta, this._wheelAccum + e.deltaY));
+          this._wheelAccum = Math.max(0, Math.min(this._totalDelta, this._wheelAccum + deltaY));
           const p = this._wheelAccum / this._totalDelta;
           this.setState({ letterProgress: p });
 
-          if (p >= 1 && e.deltaY > 0) this._locked = false; // fully open → resume scroll down
-          if (p <= 0 && e.deltaY < 0) this._locked = false; // fully closed → resume scroll up
+          if (p >= 1 && deltaY > 0) this._locked = false;
+          if (p <= 0 && deltaY < 0) this._locked = false;
         }
       };
 
+      // Desktop: wheel
+      this._onWheel = (e) => { if (this._letterEl) handleDelta(e, e.deltaY); };
       window.addEventListener('wheel', this._onWheel, { passive: false });
+
+      // Mobile: touch — scale px so ~300px swipe = full open
+      this._touchY = 0;
+      this._onTouchStart = (e) => { this._touchY = e.touches[0].clientY; };
+      this._onTouchMove  = (e) => {
+        if (!this._letterEl) return;
+        const dy = (this._touchY - e.touches[0].clientY) * 4;
+        this._touchY = e.touches[0].clientY;
+        handleDelta(e, dy);
+      };
+      window.addEventListener('touchstart', this._onTouchStart, { passive: true });
+      window.addEventListener('touchmove',  this._onTouchMove,  { passive: false });
     }
   }
 
   componentWillUnmount() {
-    if (this._onWheel) window.removeEventListener('wheel', this._onWheel);
+    if (this._onWheel)      window.removeEventListener('wheel',      this._onWheel);
+    if (this._onTouchStart) window.removeEventListener('touchstart', this._onTouchStart);
+    if (this._onTouchMove)  window.removeEventListener('touchmove',  this._onTouchMove);
   }
 
   render() {
